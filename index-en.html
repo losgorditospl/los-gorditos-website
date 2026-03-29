@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+  body { font-family: 'Barlow', Arial, sans-serif; }
+  h1, h2, h3, h4, .hero-title, .section-header h2 { font-family: 'Bebas Neue', Impact, sans-serif; }
+</style>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Los Gorditos – Tex-Mex in the heart of Kraków</title>
+<link rel="preload" href="fonts/BebasNeue-Regular.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="preload" href="fonts/Barlow-Regular.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="preload" href="fonts/Barlow-Bold.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="preload" href="fonts/Barlow-Italic.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+<noscript><link rel="stylesheet" href="style.css" /></noscript>
+  <link rel="stylesheet" href="style.css" />
+  
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="images/logo-losgorditos.svg" />
+
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <div class="topbar-inner">
+      <span>
+        <a href="tel:+48797090530">📞 +48 797 090 530</a>
+      </span>
+      <span class="topbar-hide-mobile">
+        <a href="https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x47165b8024930c9b:0x6c8ac083ad6fd7ee!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAEYASAB">📍 Augustiańska 24/LU2, 31-064 Kraków</a>
+      </span>
+      <span class="topbar-hide-mobile topbar-hide-email">
+        <p><a href="mailto:losgorditos.pl@gmail.com">✉️ losgorditos.pl@gmail.com</a></p>
+      </span>
+      <div class="topbar-social">
+        <a href="index.html" class="topbar-lang-switch" aria-label="Polish version">PL <img src="images/flag-poland.webp" alt="" aria-hidden="true" class="flag-icon" /></a>
+        <a href="https://www.facebook.com/losgorditosPL/" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+          <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.99 3.66 9.12 8.44 9.88v-6.99H7.9v-2.89h2.54V9.84c0-2.51 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.77l-.44 2.89h-2.33v6.99C18.34 21.12 22 16.99 22 12z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/losgorditos.krk.pl/" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+          <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <img src="images/logo-losgorditos.svg" alt="Los Gorditos" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" loading="eager" decoding="sync" width="86" height="86" />
+      </a>
+      <div class="nav-breakfast-wrap">
+        <!-- <a href="breakfast-en.html" class="nav-breakfast">BREAKFAST</a> -->
+        <!-- <a class="nav-breakfast">BREAKFAST</a>         -->
+        <!-- <span class="nav-breakfast-badge">NEW!</span> -->
+      </div>
+      <a href="images/menu-lg.pdf" class="mobile-quick-menu" target="_blank" rel="noopener noreferrer">MENU</a>
+      <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About us</a></li>
+        <li><a href="#offer">Our offer</a></li>
+        <li><a href="#delivery">Delivery service</a></li>
+        <li><a href="#catering">Catering</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="images/menu-lg.pdf" class="btn-menu" target="_blank">MENU</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 class="hero-title">Good times, great flavours, fresh Tex-Mex</h1>
+        <p class="hero-desc">Taste the bold flavors of fresh, Tex-Mex cuisine at Los Gorditos in Kazimierz Krakow. Dine in, take out, or get it delivered!</p>
+        <div class="hero-btns">
+          <a href="https://maps.app.goo.gl/PgwjpABLZufiH4pV9" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Our location</a>
+          <a href="#contact" class="btn btn-outline">Contact us</a>
+        </div>
+      </div>
+      <div class="hero-img">
+        <div class="hero-img-frame">
+          <img src="images/logo-above-door.webp" loading="eager" fetchpriority="high" decoding="sync" width="960" height="720" />
+        </div>
+      </div>
+    </div>
+    <div class="hero-stripe"></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container about-grid">
+      <div class="about-text">
+        <h2>Delicious comfort food & drinks, authentic flavours and great atmosphere</h2>
+        <p>Los Gorditos is a casual dining Tex-Mex & Mexican restaurant in Kazimierz Krakow. We serve Mexican & Tex-Mex comfort food for dine-in, delivery and pick-up. Our specialty dishes include burritos, burrito bowls, tacos, quesadillas, nachos and freshly-made tortilla chips with salsas.</p>
+        <p>All our food is made from fresh ingredients we make in-house. We also serve delicious margaritas, beers, lemonades, and many more tasty alcoholic and non-alcoholic drinks.</p>
+      </div>
+      <div class="about-img">
+        <img src="images/food-picture-1.webp" srcset="images/food-picture-1-640.webp 640w, images/food-picture-1-960.webp 960w, images/food-picture-1-1280.webp 1280w" sizes="(max-width: 700px) 92vw, (max-width: 1100px) 70vw, 45vw" alt="Los Gorditos food" onerror="this.parentElement.classList.add('img-placeholder')" loading="lazy" decoding="async" width="960" height="720"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- OFFER -->
+  <section class="offer" id="offer">
+    <div class="container">
+      <div class="section-header">
+        <h2>Signature dishes and drinks</h2>
+        <p>Discover our favorites!</p>
+      </div>
+      <div class="offer-grid">
+        <div class="offer-card">
+          <img src="images/burrito-1.webp" srcset="images/burrito-1-640.webp 640w, images/burrito-1-960.webp 960w, images/burrito-1-1280.webp 1280w" sizes="(max-width: 700px) 92vw, (max-width: 1100px) 70vw, 45vw" alt="Burrito" class="offer-img" loading="lazy" decoding="async" width="960" height="720"/>
+          <h3>Burrito</h3>
+          <p>Large flour tortilla filled with a flavorful mix of ingredients such as seasoned meat, rice, beans, cheese, and fresh veggies. All wrapped tightly into a satisfying handheld meal.</p>
+        </div>
+         <div class="offer-card">
+          <img src="images/burrito-bowl-1.webp" srcset="images/burrito-bowl-1-640.webp 640w, images/burrito-bowl-1-960.webp 960w, images/burrito-bowl-1-1280.webp 1280w" sizes="(max-width: 700px) 92vw, (max-width: 1100px) 70vw, 45vw" alt="Burrito Bowl" class="offer-img" loading="lazy" decoding="async" width="960" height="720"/>
+          <h3>Burrito bowl</h3>
+          <p>Deconstructed burrito served in a bowl, featuring layers of flavorful ingredients like seasoned meat, rice, beans, fresh veggies, cheese, and salsas, without the tortilla.</p>
+        </div>
+        <div class="offer-card">
+          <img src="images/tacos-1.webp" srcset="images/tacos-1-640.webp 640w, images/tacos-1-960.webp 960w, images/tacos-1-1280.webp 1280w" sizes="(max-width: 700px) 92vw, (max-width: 1100px) 70vw, 45vw" alt="Tacos" class="offer-img" loading="lazy" decoding="async" width="960" height="720" />
+          <h3>Tacos (3 pieces)</h3>
+          <p>Soft corn tortillas filled with a variety of ingredients like seasoned meat, fresh veggies, cheese, and flavorful salsas, perfect for mixing and matching.</p>
+        </div>
+        <div class="offer-card">
+          <img src="images/quesadilla-1.webp" srcset="images/quesadilla-1-640.webp 640w, images/quesadilla-1-960.webp 960w, images/quesadilla-1-1280.webp 1280w" sizes="(max-width: 700px) 92vw, (max-width: 1100px) 70vw, 45vw" alt="Quesadillas" class="offer-img" loading="lazy" decoding="async" width="960" height="720"/>
+          <h3>Quesadilla</h3>
+          <p>Warm, grilled flour tortilla filled with melted cheese, paired with savory ingredients like seasoned meat and veggies, creating a crispy & cheesy delight.</p>
+        </div>
+        <div class="offer-card">
+          <img src="images/nachos-supreme-1.webp" srcset="images/nachos-supreme-1-640.webp 640w, images/nachos-supreme-1-960.webp 960w, images/nachos-supreme-1-1280.webp 1280w" sizes="(max-width: 700px) 92vw, (max-width: 1100px) 70vw, 45vw" alt="Nachos" class="offer-img" loading="lazy" decoding="async" width="960" height="720"  />
+          <h3>Nachos supreme</h3>
+          <p>Crispy tortilla chips loaded with melted cheese, seasoned meat, beans, fresh veggies, served with sauce and salsa.</p>
+        </div>
+        <div class="offer-card">
+          <img src="images/margarita-1.webp" srcset="images/margarita-1-640.webp 640w, images/margarita-1-960.webp 960w, images/margarita-1-1280.webp 1280w" sizes="(max-width: 700px) 92vw, (max-width: 1100px) 70vw, 45vw" alt="Margarita" class="offer-img" loading="lazy" decoding="async" width="960" height="720"/>
+          <h3>Margaritas</h3>
+          <p>A refreshing Mexican cocktail made with tequila, lime juice, and orange liqueur, served on crushed ice, with a sugared rim for a sweet touch.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU SECTION -->
+  <section class="menu-section" id="menu">
+      <div class="section-header light">
+
+        <h2>Menu</h2>
+        <p class="menu-subtitle">Check out our full menu <a href="images/menu-lg.pdf" target="_blank" rel="noopener noreferrer">here</a></p>
+      </div>
+      <div class="menu-tabs" role="tablist" aria-label="Menu categories">
+        <button class="tab active" data-tab="main" role="tab" aria-selected="true" aria-controls="tab-main" id="tab-btn-main">Dishes</button>
+        <button class="tab" data-tab="sides" role="tab" aria-selected="false" aria-controls="tab-sides" id="tab-btn-sides">Main Ingredients</button>
+        <button class="tab" data-tab="drinks" role="tab" aria-selected="false" aria-controls="tab-drinks" id="tab-btn-drinks">Sides</button>
+      </div>
+      <div class="menu-content active" id="tab-main" role="tabpanel" aria-labelledby="tab-btn-main">
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Burrito</h4><p>wheat flour tortilla, main ingredient, rice, pinto beans, corn salsa, queso, lettuce, cilantro, lime juice and sauce of your choice (salsa and nachos served on the side)</p></div>
+            <span class="menu-price">from 35 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Burrito Bowl</h4><p>main ingredient, rice, pinto beans, corn salsa, queso, lettuce, pico de gallo, cilantro, lime juice and sauce of your choice (salsa and nachos served on the side)</p></div>
+            <span class="menu-price">from 35 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Tacos (3 pieces)</h4><p>corn tortillas, main ingredient, corn salsa, pico de gallo, feta cheese, cilantro, part of lime juice and sauce of your choice (salsa and nachos served on the side)</p></div>
+            <span class="menu-price">from 35 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Quesadilla</h4><p>wheat flour tortilla, basil pesto, mozzarella cheese, corn salsa, cilantro (salsa and sauce served on the side)</p></div>
+            <span class="menu-price">from 35 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Nachos Supreme</h4><p>fresh corn nachos, queso, pinto beans, main ingredient, corn salsa, pico de gallo, cilantro and sauce of your choice (salsa served on the side)</p></div>
+            <span class="menu-price">from 35 zł</span>
+          </div>
+        </div>
+      </div>
+      <div class="menu-content" id="tab-sides" role="tabpanel" aria-labelledby="tab-btn-sides">
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Vege chorizo</h4><p>A delicious plant-based option, this spicy and savory soy chorizo is made with high-quality ingredients for a satisfying vegetarian choice.</p></div>
+            <span class="menu-price">35 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Roasted cauliflower</h4><p>A flavorful, charred cauliflower option that’s perfect for those looking for a lighter, veggie-packed choice.</p></div>
+            <span class="menu-price">36 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Roasted chicken</h4><p>Juicy, perfectly roasted, seasoned chicken, that is savory and satisfying with every bite.</p></div>
+            <span class="menu-price">38 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Pulled pork</h4><p>Slow-braised, flavorful pulled pork that’s smoky, tender, and packed with rich taste.</p></div>
+            <span class="menu-price">38 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Pork steak</h4><p>Juicy, tender and slightly spicy pork steak, perfect for meat lovers.</p></div>
+            <span class="menu-price">40 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Beef Barbacoa</h4><p>Tender, slow-cooked beef marinated in rich spices for a melt-in-your-mouth experience.</p></div>
+            <span class="menu-price">44 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Lamb Barbacoa*</h4><p>A unique twist on the classic barbacoa, featuring succulent lamb cooked to perfection with earthy, aromatic seasonings.<br><br>*Served with cabbage and pickled onion in burrito and tacos.</p></div>
+            <span class="menu-price">46 zł</span>
+          </div>
+        </div>
+      </div>
+      <div class="menu-content" id="tab-drinks" role="tabpanel" aria-labelledby="tab-btn-drinks">
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Salsa Mango</h4><p>A sweet and tangy combination of ripe mangoes, cilantro, and lime, adding a tropical flair to any dish.</p></div>
+            <span class="menu-price">unlimited</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Salsa Verde</h4><p>A zesty, tangy salsa made with tomatillos and cilantro for a refreshing kick.</p></div>
+            <span class="menu-price">unlimited</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Salsa Roja</h4><p>Rich and smoky, this tomato-based salsa is the perfect balance of savory and spicy.</p></div>
+            <span class="menu-price">unlimited</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Salsa Habanero</h4><p>For the bold and adventurous, our habanero salsa packs a serious heat and deep flavor. Definitely not for the faint of heart!</p></div>
+            <span class="menu-price">unlimited</span>
+          </div>
+                    <div class="menu-item">
+            <div class="menu-item-info"><h4>Sour Cream</h4><p>Smooth and creamy, the perfect cooling complement to your spicy salsas and dishes.</p></div>
+            <span class="menu-price">unlimited</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Lime & Cilantro Cream</h4><p>A refreshing, tangy sauce with cilantro and lime, adding a burst of brightness to your meal.</p></div>
+            <span class="menu-price">unlimited</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Chipotle Cream</h4><p>A smoky, spicy twist on traditional sour cream, bringing depth and flavor to every bite.</p></div>
+            <span class="menu-price">unlimited</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Guacamole</h4><p>Made fresh daily, our creamy, flavorful guacamole is the perfect addition to any dish or a tasty dip on its own.</p></div>
+            <span class="menu-price">14 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Queso</h4><p>Rich and velvety, this cheesy goodness is a must for nachos or as an extra indulgence on your meal</p></div>
+            <span class="menu-price">10 zł</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DELIVERY -->
+  <section class="delivery" id="delivery">
+    <div class="container delivery-grid">
+      <div class="delivery-text">
+        <h2>Delivery service</h2>
+        <p>Craving a delicious meal but can’t make it to the restaurant? No worries! You can now order your favorite dishes online and savor them from the comfort of your home or office. Experience our fresh, flavorful meals delivered right to your doorstep.</p>
+      </div>
+        <div class="delivery-info">
+          <a class="info-card" href="https://www.ubereats.com/pl-en/store/los-gorditos/WMRJfUy7R5q2Wjd3zmFEQA?ps=1" target="_blank" rel="noopener noreferrer">
+            <img src="images/dostawa-ubereats.webp" srcset="images/dostawa-ubereats-640.webp 640w, images/dostawa-ubereats-960.webp 960w, images/dostawa-ubereats-1280.webp 1280w" sizes="(max-width: 700px) 92vw, (max-width: 1100px) 70vw, 45vw" alt="Los Gorditos restaurant" onerror="this.parentElement.classList.add('img-placeholder')" loading="lazy" decoding="async" />
+            <h4>Uber Eats</h4>
+          </a>
+          <a class="info-card" href="https://wolt.com/pl/pol/krakow/restaurant/los-gorditos-krakw" target="_blank" rel="noopener noreferrer">
+            <img src="images/dostawa-wolt.webp" srcset="images/dostawa-wolt-640.webp 640w, images/dostawa-wolt-960.webp 960w, images/dostawa-wolt-1280.webp 1280w" sizes="(max-width: 700px) 92vw, (max-width: 1100px) 70vw, 45vw" alt="Wolt" onerror="this.parentElement.classList.add('img-placeholder')" loading="lazy" decoding="async" />
+            <h4>Wolt</h4>
+          </a>
+          <a class="info-card" href="https://www.pyszne.pl/menu/los-gorditos" target="_blank" rel="noopener noreferrer">
+            <img src="images/dostawa-pyszne.webp" srcset="images/dostawa-pyszne-640.webp 640w, images/dostawa-pyszne-960.webp 960w, images/dostawa-pyszne-1280.webp 1280w" sizes="(max-width: 700px) 92vw, (max-width: 1100px) 70vw, 45vw" alt="Pyszne.pl" onerror="this.parentElement.classList.add('img-placeholder')" loading="lazy" decoding="async" />
+            <h4>Pyszne.pl</h4>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATERING -->
+  <section class="catering" id="catering">
+    <div class="container">
+      <div class="section-header light">
+        <h2>Catering</h2>
+        <p>At Los Gorditos, we believe the best events are the ones where you can relax and enjoy the moment—without worrying about the food. Our catering services bring delicious, fresh Tex-Mex and Mexican dishes straight to your event, so you can focus on having a great time with your guests. From burritos to nachos, from quesadillas to tacos, we’ll make sure everyone leaves satisfied, letting you enjoy your event to the fullest!</p>
+      </div>
+      <div class="catering-grid">
+          <div class="catering-card catering-card-center">
+          <h3>🎂 For Every Occasion</h3>
+          <p>Whether it's a corporate gathering, birthday party, or special occasion, we’ll create a delicious spread that your guests will love. Contact us to make your event unforgettable with our flavorful food and exceptional service!</p>
+        </div>
+          <div class="catering-card catering-card-center">
+          <h3>⭐️ A Team of Superstars</h3>
+          <p>Our team is here to make your catering experience seamless and unforgettable. From carefully planning your menu to expertly preparing and delivering every dish with care, our passionate staff ensures your event is a flavorful success.</p>
+        </div>
+      </div>
+      <div class="catering-cta">
+        <a href="mailto:losgorditos.pl@gmail.com" class="btn btn-primary">Ask about catering</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <h2>A Glimpse of Our Space</h2>
+        <p>Discover the charm of our restaurant, from cozy corners, to big tables and a beautiful summer garden.  Pets welcome as well!</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item"><img src="images/gallery-1.webp" srcset="images/gallery-1-640.webp 640w, images/gallery-1-960.webp 960w, images/gallery-1-1280.webp 1280w" sizes="(max-width: 700px) 92vw, (max-width: 1100px) 70vw, 45vw" alt="Los Gorditos" onerror="this.parentElement.classList.add('img-ph')" loading="lazy" decoding="async" width="720" height="1280"/></div>
+        <div class="gallery-item"><img src="images/gallery-2.webp" srcset="images/gallery-2-640.webp 640w, images/gallery-2-960.webp 960w, images/gallery-2-1280.webp 1280w" sizes="(max-width: 700px) 92vw, (max-width: 1100px) 70vw, 45vw" alt="Los Gorditos" onerror="this.parentElement.classList.add('img-ph')" loading="lazy" decoding="async" width="720" height="1280"/></div>
+        <div class="gallery-item"><img src="images/gallery-3.webp" srcset="images/gallery-3-640.webp 640w, images/gallery-3-960.webp 960w, images/gallery-3-1280.webp 1280w" sizes="(max-width: 700px) 92vw, (max-width: 1100px) 70vw, 45vw" alt="Los Gorditos" onerror="this.parentElement.classList.add('img-ph')" loading="lazy" decoding="async" width="720" height="1280"/></div>
+        <div class="gallery-item"><img src="images/gallery-4.webp" srcset="images/gallery-4-640.webp 640w, images/gallery-4-960.webp 960w, images/gallery-4-1280.webp 1280w" sizes="(max-width: 700px) 92vw, (max-width: 1100px) 70vw, 45vw" alt="Los Gorditos" onerror="this.parentElement.classList.add('img-ph')" loading="lazy" decoding="async" width="720" height="1280"/></div>
+        <div class="gallery-item"><img src="images/gallery-5.webp" srcset="images/gallery-5-640.webp 640w, images/gallery-5-960.webp 960w, images/gallery-5-1280.webp 1280w" sizes="(max-width: 700px) 92vw, (max-width: 1100px) 70vw, 45vw" alt="Los Gorditos" onerror="this.parentElement.classList.add('img-ph')" loading="lazy" decoding="async" width="720" height="1280"/></div>
+        <div class="gallery-item"><img src="images/gallery-6.webp" srcset="images/gallery-6-640.webp 640w, images/gallery-6-960.webp 960w, images/gallery-6-1280.webp 1280w" sizes="(max-width: 700px) 92vw, (max-width: 1100px) 70vw, 45vw" alt="Los Gorditos" onerror="this.parentElement.classList.add('img-ph')" loading="lazy" decoding="async" width="720" height="1280"/></div>
+        <div class="gallery-item"><img src="images/gallery-7.webp" srcset="images/gallery-7-640.webp 640w, images/gallery-7-960.webp 960w, images/gallery-7-1280.webp 1280w" sizes="(max-width: 700px) 92vw, (max-width: 1100px) 70vw, 45vw" alt="Los Gorditos" onerror="this.parentElement.classList.add('img-ph')" loading="lazy" decoding="async" width="720" height="1280"/></div>
+        <div class="gallery-item"><img src="images/gallery-8.webp" srcset="images/gallery-8-640.webp 640w, images/gallery-8-960.webp 960w, images/gallery-8-1280.webp 1280w" sizes="(max-width: 700px) 92vw, (max-width: 1100px) 70vw, 45vw" alt="Los Gorditos" onerror="this.parentElement.classList.add('img-ph')" loading="lazy" decoding="async" width="720" height="1280"/></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <h2>Contact</h2>
+        <div class="contact-item">
+          <span class="contact-icon" aria-hidden="true">📍</span>
+          <div>
+            <strong>Address</strong>
+            <p><a href="https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x47165b8024930c9b:0x6c8ac083ad6fd7ee!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAEYASAB" target="_blank" rel="noopener noreferrer">Augustiańska 24/LU2, 31-064 Kraków</a><br>(on the corner of Augustiańska and Węgłowa streets)</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon" aria-hidden="true">📞</span>
+          <div>
+            <strong>Phone</strong>
+            <p><a href="tel:+48797090530">+48 797 090 530</a></p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon" aria-hidden="true">✉️</span>
+          <div>
+            <strong>E-mail</strong>
+            <p><a href="mailto:losgorditos.pl@gmail.com">losgorditos.pl@gmail.com</a></p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon" aria-hidden="true">🕐</span>
+          <div>
+            <strong>Opening Hours</strong>
+            <p>Sunday - Thursday: 12:00-21:00</p>
+            <p>Friday - Saturday: 12:00-22:00</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon" aria-hidden="true">🗓️</span>
+          <div>
+            <strong>Reservations</strong>
+            <p>Call us or <a href="https://www.google.com/maps/reserve/v/dine/c/W-5GVTharu4?source=pa&opi=79508299&hl=en-PL&gei=d4jBabeLNJif1fIPmJqS0Qo&sourceurl=https://www.google.com/search?tbm%3Dmap%26authuser%3D0%26hl%3Den%26gl%3Dpl%26pb%3D!4m9!1m3!1d26547.245008040114!2d19.9700962!3d50.0611521!2m0!3m2!1i1324!2i995!4f13.1!7i20!10b1!12m25!1m5!18b1!30b1!31m1!1b1!34e1!2m4!5m1!6e2!20e3!39b1!10b1!12b1!13b1!16b1!17m1!3e1!20m3!5e2!6b1!14b1!46m1!1b0!96b1!99b1!19m4!2m3!1i360!2i120!4i8!20m65!2m2!1i203!2i100!3m2!2i4!5b1!6m6!1m2!1i86!2i86!1m2!1i408!2i240!7m33!1m3!1e1!2b0!3e3!1m3!1e2!2b1!3e2!1m3!1e2!2b0!3e3!1m3!1e8!2b0!3e3!1m3!1e10!2b0!3e3!1m3!1e10!2b1!3e2!1m3!1e10!2b0!3e4!1m3!1e9!2b1!3e2!2b1!9b0!15m16!1m7!1m2!1m1!1e2!2m2!1i195!2i195!3i20!1m7!1m2!1m1!1e2!2m2!1i195!2i195!3i20!22m6!1sdIjBaYuGAZeN7NYPzfiQiQQ:1!2s1i:0,t:11886,p:dIjBaYuGAZeN7NYPzfiQiQQ:1!7e81!12e5!17sdIjBaYuGAZeN7NYPzfiQiQQ:94!18e15!24m109!1m27!13m9!2b1!3b1!4b1!6i1!8b1!9b1!14b1!20b1!25b1!18m16!3b1!4b1!5b1!6b1!9b1!13b1!14b1!17b1!20b1!21b1!22b1!32b1!33m1!1b1!34b1!36e2!10m1!8e3!11m1!3e1!17b1!20m2!1e3!1e6!24b1!25b1!26b1!27b1!29b1!30m1!2b1!36b1!37b1!39m3!2m2!2i1!3i1!43b1!52b1!54m1!1b1!55b1!56m1!1b1!61m2!1m1!1e1!65m5!3m4!1m3!1m2!1i224!2i298!72m22!1m8!2b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!4b1!8m10!1m6!4m1!1e1!4m1!1e3!4m1!1e4!3sother_user_google_review_posts__and__hotel_and_vr_partner_review_posts!6m1!1e1!9b1!89b1!90m2!1m1!1e2!98m3!1b1!2b1!3b1!103b1!113b1!114m3!1b1!2m1!1b1!117b1!122m1!1b1!126b1!127b1!128m1!1b0!26m4!2m3!1i80!2i92!4i8!30m28!1m6!1m2!1i0!2i0!2m2!1i530!2i995!1m6!1m2!1i1274!2i0!2m2!1i1324!2i995!1m6!1m2!1i0!2i0!2m2!1i1324!2i20!1m6!1m2!1i0!2i975!2m2!1i1324!2i995!34m19!2b1!3b1!4b1!6b1!8m6!1b1!3b1!4b1!5b1!6b1!7b1!9b1!12b1!14b1!20b1!23b1!25b1!26b1!31b1!37m1!1e81!42b1!47m0!49m10!3b1!6m2!1b1!2b1!7m2!1e3!2b1!8b1!9b1!10e2!50m4!2e2!3m2!1b1!3b1!67m5!7b1!10b1!14b1!15m1!1b0!69i772!77b1%26q%3Dlos%2Bgorditos%26oq%3Dlos%2Bgorditos%26gs_l%3Dmaps.3..38i39i111i426k1j38i72k1j38i376k1j38i72k1l2.1340.2671.1.3123.12.11.....90.593.7.7.....0....1..maps..5.7.622.0..38i39i129k1j38i39i111i444k1j38i426k1j38i444k1.%26ech%3D1%26psi%3DdIjBaYuGAZeN7NYPzfiQiQQ.1774291060567.1"><u><b>make a reservation online</b></u></a> .</p>
+          </div>
+        </div>
+        <p><strong>Follow us:</strong></p>
+        <div class="contact-social">
+          <a href="https://www.facebook.com/losgorditosPL/" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+            <svg width="36" height="36" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.99 3.66 9.12 8.44 9.88v-6.99H7.9v-2.89h2.54V9.84c0-2.51 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.77l-.44 2.89h-2.33v6.99C18.34 21.12 22 16.99 22 12z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/losgorditos.krk.pl/" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+            <svg width="36" height="36" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="contact-map">
+        <iframe title="Map of Los Gorditos restaurant location in Kraków" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5804.774728288096!2d19.938453712981183!3d50.049842681723504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b8024930c9b%3A0x6c8ac083ad6fd7ee!2sLos%20Gorditos!5e0!3m2!1sen!2spl!4v1774278177164!5m2!1sen!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap:40px; align-items:start;">
+      
+      <!-- LOGO + OPIS -->
+      <div class="footer-logo">
+        <img src="images/logo-losgorditos.svg" alt="Los Gorditos" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" loading="lazy" decoding="async" />
+        <p style="margin-top:10px; font-weight:600;">Tex-Mex in the heart of Kazimierz</p>
+        <p class="footer-muted" style="margin-top:10px;">
+          We serve fresh, authentic Tex-Mex dishes prepared from scratch.
+          Come for a quick lunch or dinner with friends!
+        </p>
+      </div>
+
+      <!-- GODZINY OTWARCIA -->
+      <div class="footer-hours">
+        <h4>Opening Hours</h4>
+            <p>Sunday - Thursday: 12:00-21:00</p>
+            <p>Friday - Saturday: 12:00-22:00</p>
+      </div>
+
+      <!-- KONTAKT -->
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p><a href="tel:+48797090530">📞 +48 797 090 530</a></p>
+        <p><a href="mailto:losgorditos.pl@gmail.com">✉️ losgorditos.pl@gmail.com</a></p>
+        <div style="margin-top:10px; display:flex; gap:10px;">
+          <a href="https://www.facebook.com/losgorditosPL/" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://www.instagram.com/losgorditos.krk.pl/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
+      </div>
+
+    </div>
+
+      <!-- COPYRIGHT -->
+    <div class="footer-copy" style="text-align:center; margin-top:30px;">
+            <p>
+        © 2026 Los Gorditos. All rights reserved. <br> Website made by Michał Dudek. 
+        <a href="https://github.com/michaldudek15" target="_blank" rel="noopener noreferrer" style="margin-left:6px; display:inline-flex; vertical-align:middle;">
+          <svg width="14" height="14" viewBox="0 -0.5 25 25" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="m12.301 0h.093c2.242 0 4.34.613 6.137 1.68l-.055-.031c1.871 1.094 3.386 2.609 4.449 4.422l.031.058c1.04 1.769 1.654 3.896 1.654 6.166 0 5.406-3.483 10-8.327 11.658l-.087.026c-.063.02-.135.031-.209.031-.162 0-.312-.054-.433-.144l.002.001c-.128-.115-.208-.281-.208-.466 0-.005 0-.01 0-.014v.001q0-.048.008-1.226t.008-2.154c.007-.075.011-.161.011-.249 0-.792-.323-1.508-.844-2.025.618-.061 1.176-.163 1.718-.305l-.076.017c.573-.16 1.073-.373 1.537-.642l-.031.017c.508-.28.938-.636 1.292-1.058l.006-.007c.372-.476.663-1.036.84-1.645l.009-.035c.209-.683.329-1.468.329-2.281 0-.045 0-.091-.001-.136v.007c0-.022.001-.047.001-.072 0-1.248-.482-2.383-1.269-3.23l.003.003c.168-.44.265-.948.265-1.479 0-.649-.145-1.263-.404-1.814l.011.026c-.115-.022-.246-.035-.381-.035-.334 0-.649.078-.929.216l.012-.005c-.568.21-1.054.448-1.512.726l.038-.022-.609.384c-.922-.264-1.981-.416-3.075-.416s-2.153.152-3.157.436l.081-.02q-.256-.176-.681-.433c-.373-.214-.814-.421-1.272-.595l-.066-.022c-.293-.154-.64-.244-1.009-.244-.124 0-.246.01-.364.03l.013-.002c-.248.524-.393 1.139-.393 1.788 0 .531.097 1.04.275 1.509l-.01-.029c-.785.844-1.266 1.979-1.266 3.227 0 .025 0 .051.001.076v-.004c-.001.039-.001.084-.001.13 0 .809.12 1.591.344 2.327l-.015-.057c.189.643.476 1.202.85 1.693l-.009-.013c.354.435.782.793 1.267 1.062l.022.011c.432.252.933.465 1.46.614l.046.011c.466.125 1.024.227 1.595.284l.046.004c-.431.428-.718 1-.784 1.638l-.001.012c-.207.101-.448.183-.699.236l-.021.004c-.256.051-.549.08-.85.08-.022 0-.044 0-.066 0h.003c-.394-.008-.756-.136-1.055-.348l.006.004c-.371-.259-.671-.595-.881-.986l-.007-.015c-.198-.336-.459-.614-.768-.827l-.009-.006c-.225-.169-.49-.301-.776-.38l-.016-.004-.32-.048c-.023-.002-.05-.003-.077-.003-.14 0-.273.028-.394.077l.007-.003q-.128.072-.08.184c.039.086.087.16.145.225l-.001-.001c.061.072.13.135.205.19l.003.002.112.08c.283.148.516.354.693.603l.004.006c.191.237.359.505.494.792l.01.024.16.368c.135.402.38.738.7.981l.005.004c.3.234.662.402 1.057.478l.016.002c.33.064.714.104 1.106.112h.007c.045.002.097.002.15.002.261 0 .517-.021.767-.062l-.027.004.368-.064q0 .609.008 1.418t.008.873v.014c0 .185-.08.351-.208.466h-.001c-.119.089-.268.143-.431.143-.075 0-.147-.011-.214-.032l.005.001c-4.929-1.689-8.409-6.283-8.409-11.69 0-2.268.612-4.393 1.681-6.219l-.032.058c1.094-1.871 2.609-3.386 4.422-4.449l.058-.031c1.739-1.034 3.835-1.645 6.073-1.645h.098-.005z"></path>
+          </svg>
+        </a>
+      </p>
+    </div>
+  </footer>
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  (() => {
+    // Na odświeżeniu zawsze wracaj do początku strony, nawet jeśli URL ma #anchor.
+    const navEntries = typeof performance.getEntriesByType === 'function'
+      ? performance.getEntriesByType('navigation')
+      : [];
+    const isReload = navEntries.length > 0
+      ? navEntries[0].type === 'reload'
+      : (performance.navigation && performance.navigation.type === 1);
+
+    if (isReload && window.location.hash) {
+      if ('scrollRestoration' in history) {
+        history.scrollRestoration = 'manual';
+      }
+      history.replaceState(null, '', window.location.pathname + window.location.search);
+      window.scrollTo(0, 0);
+      window.addEventListener('load', () => window.scrollTo(0, 0), { once: true });
+    }
+
+    const hamburgerBtn = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-links');
+
+    if (hamburgerBtn && navMenu) {
+      const links = navMenu.querySelectorAll('a');
+
+      // Toggle menu w&nbsp;obu wariantach klas, bo CSS używa active/open.
+      hamburgerBtn.addEventListener('click', () => {
+        const isOpen = navMenu.classList.toggle('active');
+        navMenu.classList.toggle('open');
+        hamburgerBtn.classList.toggle('open');
+        hamburgerBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+
+      links.forEach(link => {
+        link.addEventListener('click', () => {
+          navMenu.classList.remove('active');
+          navMenu.classList.remove('open');
+          hamburgerBtn.classList.remove('open');
+          hamburgerBtn.setAttribute('aria-expanded', 'false');
+        });
+      });
+    }
+
+    // Each tab shows its associated panel: #tab-{data-tab}.
+    const tabs = document.querySelectorAll('.tab[data-tab]');
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => {
+          t.classList.remove('active');
+          t.setAttribute('aria-selected', 'false');
+        });
+        document.querySelectorAll('.menu-content').forEach(p => p.classList.remove('active'));
+        tab.classList.add('active');
+        tab.setAttribute('aria-selected', 'true');
+        const panel = document.getElementById('tab-' + tab.dataset.tab);
+        if (panel) panel.classList.add('active');
+      });
+    });
+
+    // Navbar scrolled shadow
+    const navbar = document.getElementById('navbar');
+    if (navbar) {
+      window.addEventListener('scroll', () => {
+        navbar.classList.toggle('scrolled', window.scrollY > 10);
+      }, { passive: true });
+    }
+  })();
+  </script>
+</body>
+</html>
