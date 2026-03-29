@@ -1,19 +1,54 @@
 <!DOCTYPE html>
 <html lang="pl">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Los Gorditos",
+  "image": "https://losgorditos.pl/images/logo-losgorditos.svg",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Augustiańska 24/LU2",
+    "addressLocality": "Kraków",
+    "postalCode": "31-064",
+    "addressCountry": "PL"
+  },
+  "telephone": "+48797090530",
+  "servesCuisine": ["Tex-Mex", "Mexican"],
+  "url": "https://losgorditos.pl",
+  "menu": "https://losgorditos.pl/images/menu-lg.pdf"
+}
+</script>
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Los Gorditos – Tex-Mex w&nbsp;sercu Kazimierza</title>
+  <meta name="description" content="Los Gorditos to restauracja Tex-Mex na krakowskim Kazimierzu. Burrito, tacos, quesadillas, świeże składniki i dostawa. Sprawdź menu i zamów online!" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://losgorditos.pl/" />
+  <meta property="og:title" content="Los Gorditos – Tex-Mex w sercu Kazimierza" />
+  <meta property="og:description" content="Świeże burrito, tacos i więcej. Sprawdź menu Los Gorditos w Krakowie!" />
+  <meta property="og:image" content="https://losgorditos.pl/images/og-image.jpg" />
+  <meta property="og:url" content="https://losgorditos.pl/" />
+  <meta property="og:type" content="website" />
+  <meta name="geo.region" content="PL-MA" />
+  <meta name="geo.placename" content="Kraków" />
+  <meta name="geo.position" content="50.04877;19.94220" />
+  <meta name="ICBM" content="50.04877, 19.94220" />
 
+
+  <title>Los Gorditos – Tex-Mex w&nbsp;sercu Kazimierza</title>
+  <link rel="prefetch" href="images/menu-lg.pdf" as="document">
   <style>
     body { font-family: 'Barlow', Arial, sans-serif; }
     h1, h2, h3, h4, .hero-title, .section-header h2 { font-family: 'Bebas Neue', Impact, sans-serif; }
   </style>
 
-<link rel="preload" href="fonts/BebasNeue-Regular.ttf" as="font" type="font/ttf" crossorigin>
-<link rel="preload" href="fonts/Barlow-Regular.ttf" as="font" type="font/ttf" crossorigin>
-<link rel="preload" href="fonts/Barlow-Bold.ttf" as="font" type="font/ttf" crossorigin>
-<link rel="preload" href="fonts/Barlow-Italic.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="fonts/BebasNeue-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="fonts/Barlow-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="fonts/Barlow-Bold.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="fonts/Barlow-Italic.ttf" as="font" type="font/ttf" crossorigin>
 
   <link rel="stylesheet" href="style.css" />
   <!-- Favicon -->
@@ -118,7 +153,7 @@
         <div class="offer-card">
           <img src="images/burrito-1.webp" srcset="images/burrito-1-640.webp 640w, images/burrito-1-960.webp 960w, images/burrito-1-1280.webp 1280w" sizes="(max-width: 700px) 92vw, (max-width: 1100px) 70vw, 45vw" alt="Burrito" class="offer-img" loading="lazy" decoding="async" width="960" height="720"/>
           <h3>Burrito</h3>
-          <p>Pszenna tortilla wypełniona aromatyczną mieszanką składników. Podawane z&nbsp;wybraną salsą na boku oraz nachosami.</p>
+          <p>Pszenna tortilla wypełniona aromatyczną mieszanką składników. Podawane z&nbsp;wybraną salsą oraz nachosami.</p>
         </div>
          <div class="offer-card">
           <img src="images/burrito-bowl-1.webp" srcset="images/burrito-bowl-1-640.webp 640w, images/burrito-bowl-1-960.webp 960w, images/burrito-bowl-1-1280.webp 1280w" sizes="(max-width: 700px) 92vw, (max-width: 1100px) 70vw, 45vw" alt="Burrito Bowl" class="offer-img" loading="lazy" decoding="async" width="960" height="720"/>
@@ -128,17 +163,17 @@
         <div class="offer-card">
           <img src="images/tacos-1.webp" srcset="images/tacos-1-640.webp 640w, images/tacos-1-960.webp 960w, images/tacos-1-1280.webp 1280w" sizes="(max-width: 700px) 92vw, (max-width: 1100px) 70vw, 45vw" alt="Tacos" class="offer-img" loading="lazy" decoding="async" width="960" height="720"/>
           <h3>Tacos (3 sztuki)</h3>
-          <p>Miękkie tortille kukurydziane wypełnione świeżymi składnikami. Idealna opcja do próbowania różnych rodzajów głównych składników i&nbsp;sosów. Podawane z&nbsp;wybraną salsą na boku oraz nachosami.</p>
+          <p>Miękkie tortille kukurydziane wypełnione świeżymi składnikami. Idealna opcja do próbowania różnych rodzajów głównych składników i&nbsp;sosów. Podawane z&nbsp;wybraną salsą oraz nachosami.</p>
         </div>
         <div class="offer-card">
           <img src="images/quesadilla-1.webp" srcset="images/quesadilla-1-640.webp 640w, images/quesadilla-1-960.webp 960w, images/quesadilla-1-1280.webp 1280w" sizes="(max-width: 700px) 92vw, (max-width: 1100px) 70vw, 45vw" alt="Quesadillas" class="offer-img" loading="lazy" decoding="async" width="960" height="720"/>
           <h3>Quesadilla</h3>
-          <p>Gorąca, grillowana tortilla pszenna, wypełniona zapieczonym serem, salsą kukurydzianą i&nbsp;wybranym głównym składnikiem. Podawana z&nbsp;wybraną salsą oraz sosem na boku.</p>
+          <p>Gorąca, grillowana tortilla pszenna, wypełniona zapieczonym serem, salsą kukurydzianą i&nbsp;wybranym głównym składnikiem. Podawana z&nbsp;wybraną salsą oraz sosem.</p>
         </div>
         <div class="offer-card">
           <img src="images/nachos-supreme-1.webp" srcset="images/nachos-supreme-1-640.webp 640w, images/nachos-supreme-1-960.webp 960w, images/nachos-supreme-1-1280.webp 1280w" sizes="(max-width: 700px) 92vw, (max-width: 1100px) 70vw, 45vw" alt="Nachos" class="offer-img" loading="lazy" decoding="async" width="960" height="720"/>
           <h3>Nachosy</h3>
-          <p>Świeże, chrupiące czipsy kukurydziane. Do wyboru wersja supreme polana queso, z&nbsp;warzywami, głównym składnikiem i&nbsp;salsą obok lub solo, z&nbsp;salsą i&nbsp;sosem na boku. Koniecznie dobierz guacamole!</p>
+          <p>Świeże, chrupiące czipsy kukurydziane. Do wyboru wersja supreme polana queso, z&nbsp;warzywami, głównym składnikiem i&nbsp;salsą obok lub solo, z&nbsp;salsą i&nbsp;sosem. Koniecznie dobierz guacamole!</p>
         </div>
         <div class="offer-card">
           <img src="images/margarita-1.webp" srcset="images/margarita-1-640.webp 640w, images/margarita-1-960.webp 960w, images/margarita-1-1280.webp 1280w" sizes="(max-width: 700px) 92vw, (max-width: 1100px) 70vw, 45vw" alt="Margarita" class="offer-img" loading="lazy" decoding="async" width="960" height="720"/>
@@ -316,10 +351,10 @@
         <p>Odkryj urok naszej restauracji, od przytulnych kącików, po duże stoły i&nbsp;piękny, kolorowy ogródek letni. Zwierzęta są zawsze mile widziane!</p>
       </div>
       <div class="gallery-grid">
-        <div class="gallery-item"><img src="images/gallery-1.webp" srcset="images/gallery-1-640.webp 640w, images/gallery-1-960.webp 960w, images/gallery-1-1280.webp 1280w" sizes="(max-width: 700px) 92vw, (max-width: 1100px) 70vw, 45vw" alt="Los Gorditos" onerror="this.parentElement.classList.add('img-ph')" loading="lazy" decoding="async" width="720" height="1280" /></div>
-        <div class="gallery-item"><img src="images/gallery-2.webp" srcset="images/gallery-2-640.webp 640w, images/gallery-2-960.webp 960w, images/gallery-2-1280.webp 1280w" sizes="(max-width: 700px) 92vw, (max-width: 1100px) 70vw, 45vw" alt="Los Gorditos" onerror="this.parentElement.classList.add('img-ph')" loading="lazy" decoding="async" width="720" height="1280" /></div>
         <div class="gallery-item"><img src="images/gallery-3.webp" srcset="images/gallery-3-640.webp 640w, images/gallery-3-960.webp 960w, images/gallery-3-1280.webp 1280w" sizes="(max-width: 700px) 92vw, (max-width: 1100px) 70vw, 45vw" alt="Los Gorditos" onerror="this.parentElement.classList.add('img-ph')" loading="lazy" decoding="async" width="720" height="1280" /></div>
-        <div class="gallery-item"><img src="images/gallery-4.webp" srcset="images/gallery-4-640.webp 640w, images/gallery-4-960.webp 960w, images/gallery-4-1280.webp 1280w" sizes="(max-width: 700px) 92vw, (max-width: 1100px) 70vw, 45vw" alt="Los Gorditos" onerror="this.parentElement.classList.add('img-ph')" loading="lazy" decoding="async" width="720" height="1280" /></div>
+        <div class="gallery-item"><img src="images/gallery-2.webp" srcset="images/gallery-2-640.webp 640w, images/gallery-2-960.webp 960w, images/gallery-2-1280.webp 1280w" sizes="(max-width: 700px) 92vw, (max-width: 1100px) 70vw, 45vw" alt="Los Gorditos" onerror="this.parentElement.classList.add('img-ph')" loading="lazy" decoding="async" width="720" height="1280" /></div>
+        <div class="gallery-item"><img src="images/gallery-4.webp" srcset="images/gallery-4-640.webp 640w, images/gallery-4-960.webp 960w, images/gallery-4-1280.webp 1280w" sizes="(max-width: 700px) 92vw, (max-width: 1100px) 70vw, 45vw" alt="Los Gorditos" onerror="this.parentElement.classList.add('img-ph')" loading="lazy" decoding="async" width="720" height="1280" /></div>        
+        <div class="gallery-item"><img src="images/gallery-1.webp" srcset="images/gallery-1-640.webp 640w, images/gallery-1-960.webp 960w, images/gallery-1-1280.webp 1280w" sizes="(max-width: 700px) 92vw, (max-width: 1100px) 70vw, 45vw" alt="Los Gorditos" onerror="this.parentElement.classList.add('img-ph')" loading="lazy" decoding="async" width="720" height="1280" /></div>
         <div class="gallery-item"><img src="images/gallery-5.webp" srcset="images/gallery-5-640.webp 640w, images/gallery-5-960.webp 960w, images/gallery-5-1280.webp 1280w" sizes="(max-width: 700px) 92vw, (max-width: 1100px) 70vw, 45vw" alt="Los Gorditos" onerror="this.parentElement.classList.add('img-ph')" loading="lazy" decoding="async" width="720" height="1280" /></div>
         <div class="gallery-item"><img src="images/gallery-6.webp" srcset="images/gallery-6-640.webp 640w, images/gallery-6-960.webp 960w, images/gallery-6-1280.webp 1280w" sizes="(max-width: 700px) 92vw, (max-width: 1100px) 70vw, 45vw" alt="Los Gorditos" onerror="this.parentElement.classList.add('img-ph')" loading="lazy" decoding="async" width="720" height="1280" /></div>
         <div class="gallery-item"><img src="images/gallery-7.webp" srcset="images/gallery-7-640.webp 640w, images/gallery-7-960.webp 960w, images/gallery-7-1280.webp 1280w" sizes="(max-width: 700px) 92vw, (max-width: 1100px) 70vw, 45vw" alt="Los Gorditos" onerror="this.parentElement.classList.add('img-ph')" loading="lazy" decoding="async" width="720" height="1280" /></div>
