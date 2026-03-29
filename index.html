@@ -117,7 +117,7 @@
   <nav class="navbar" id="navbar">
     <div class="nav-inner">
       <a href="#" class="nav-logo">
-        <img src="images/logo-losgorditos.svg" alt="Los Gorditos" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" loading="eager" decoding="sync" width="86" height="86" />
+        <img src="images/logo-losgorditos.svg" alt="Los Gorditos" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" loading="eager" fetchpriority=high decoding="sync" width="86" height="86" />
       </a>
       <div class="nav-breakfast-wrap">
         <!-- <a href="breakfast.html" class="nav-breakfast">ŚNIADANIE</a> -->
@@ -499,7 +499,7 @@
     </div>
   </footer>
 
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
   (() => {
     // Na odświeżeniu zawsze wracaj do początku strony, nawet jeśli URL ma #anchor.
     const navEntries = typeof performance.getEntriesByType === 'function'
