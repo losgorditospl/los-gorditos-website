@@ -1,39 +1,44 @@
-<urlset 
-  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
-    <url>
-        <loc>https://losgorditos.pl/</loc>
-        <xhtml:link rel="alternate" hreflang="pl" href="https://losgorditos.pl/" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://losgorditos.pl/index-en.html" />
-    </url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xhtml="http://www.w3.org/1999/xhtml"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-    <url>
-        <loc>https://losgorditos.pl/index-en.html</loc>
-        <xhtml:link rel="alternate" hreflang="pl" href="https://losgorditos.pl/" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://losgorditos.pl/index-en.html" />
-    </url>
+<url>
+  <loc>https://losgorditos.pl/</loc>
+  <xhtml:link rel="alternate" hreflang="pl" href="https://losgorditos.pl/"/>
+  <xhtml:link rel="alternate" hreflang="en" href="https://losgorditos.pl/en.html"/>
+  <lastmod>2026-04-23T22:12:35+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://losgorditos.pl/en.html</loc>
+  <xhtml:link rel="alternate" hreflang="pl" href="https://losgorditos.pl/"/>
+  <xhtml:link rel="alternate" hreflang="en" href="https://losgorditos.pl/en.html"/>
+  <lastmod>2026-04-23T22:12:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://losgorditos.pl/menu/</loc>
+  <lastmod>2026-04-23T22:12:35+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://losgorditos.pl/breakfast/</loc>
+  <xhtml:link rel="alternate" hreflang="pl" href="https://losgorditos.pl/breakfast/"/>
+  <xhtml:link rel="alternate" hreflang="en" href="https://losgorditos.pl/breakfast/en.html"/>
+  <lastmod>2026-04-23T22:12:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://losgorditos.pl/breakfast/en.html</loc>
+  <xhtml:link rel="alternate" hreflang="pl" href="https://losgorditos.pl/breakfast/"/>
+  <xhtml:link rel="alternate" hreflang="en" href="https://losgorditos.pl/breakfast/en.html"/>
+  <lastmod>2026-04-23T22:12:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
 
-    <url>
-        <loc>https://losgorditos.pl/breakfast.html</loc>
-        <xhtml:link rel="alternate" hreflang="pl" href="https://losgorditos.pl/breakfast.html" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://losgorditos.pl/breakfast-en.html" />
-    </url>
-
-    <url>
-        <loc>https://losgorditos.pl/images/menu-lg.pdf</loc>
-    </url>
-
-    <url>
-        <loc>https://losgorditos.pl/index.html</loc>
-        <xhtml:link rel="alternate" hreflang="pl" href="https://losgorditos.pl" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://losgorditos.pl/index-en.html" />
-    </url>
-
-    <url>
-        <loc>https://losgorditos.pl/breakfast-en.html</loc>
-        <xhtml:link rel="alternate" hreflang="pl" href="https://losgorditos.pl/breakfast.html" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://losgorditos.pl/breakfast-en.html" />
-    </url>
 
 </urlset>

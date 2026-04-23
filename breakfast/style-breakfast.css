@@ -23,7 +23,7 @@
 /* Bebas Neue Regular */
 @font-face {
   font-family: 'Bebas Neue';
-  src: url('fonts/BebasNeue-Regular.ttf') format('truetype');
+  src: url('../fonts/BebasNeue-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -32,7 +32,7 @@
 /* Barlow Regular */
 @font-face {
   font-family: 'Barlow';
-  src: url('fonts/Barlow-Regular.ttf') format('truetype');
+  src: url('../fonts/Barlow-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -41,7 +41,7 @@
 /* Barlow Bold */
 @font-face {
   font-family: 'Barlow';
-  src: url('fonts/Barlow-Bold.ttf') format('truetype');
+  src: url('../fonts/Barlow-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -50,7 +50,7 @@
 /* Barlow Italic */
 @font-face {
   font-family: 'Barlow';
-  src: url('fonts/Barlow-Italic.ttf') format('truetype');
+  src: url('../fonts/Barlow-Italic.ttf') format('truetype');
   font-weight: 400;
   font-style: italic;
   font-display: swap;
@@ -133,7 +133,7 @@ ul { list-style: none; }
 }
 .topbar-inner span { display: flex; align-items: center; gap: 6px; }
 .topbar-social { margin-left: auto; display: flex; gap: 12px; }
-.topbar-social a { color: #767676; transition: color 0.2s; }
+.topbar-social a { color: #aaaaaa; transition: color 0.2s; }
 .topbar-social a:hover { color: var(--orange); }
 
 .topbar-lang-switch {

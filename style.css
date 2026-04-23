@@ -676,20 +676,35 @@ ul { list-style: none; }
   flex-direction: column;  /* logo nad nazwą */
   justify-content: center;
   align-items: center;
-  gap: 14px;
+  gap: 10px;
   text-align: center;
+  text-decoration: none;
   background: var(--white);
+  border: 2px solid #d7d7d7;
   border-radius: 12px;
-  padding: 28px 16px;
-  border-bottom: 4px solid var(--orange);
-  flex: 0 1 240px;         /* szersze kafelki dla większych logotypow */
+  padding: 8px;
+  flex: 0 1 240px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+.info-card:hover {
+  border-color: var(--orange);
+  background: #fff8f2;
+  box-shadow: 0 0 0 3px rgba(237, 120, 41, 0.14);
+}
+
+.offer-card:hover 
+
+.info-card:focus-visible {
+  outline: 2px solid var(--orange);
+  outline-offset: 4px;
 }
 .delivery-info .info-card img {
-  width: auto;
-  height: clamp(88px, 11vw, 130px);
-  max-width: 100%;
+  width: min(100%, 220px);
+  height: auto;
+  max-height: 120px;
   object-fit: contain;
   margin-bottom: 0;
+  display: block;
 }
 .info-icon { font-size: 2rem; margin-bottom: 8px; }
 .delivery-info .info-card h4 {
@@ -698,7 +713,9 @@ ul { list-style: none; }
   color: var(--black);
   margin-bottom: 0;
   margin-top: 8px;
+  transition: color 0.2s ease;
 }
+.info-card:hover h4 { color: var(--orange); }
 .info-card p { font-size: 0.8rem; color: var(--gray); }
 
 /* ---- CATERING ---- */
@@ -1540,20 +1557,32 @@ ul { list-style: none; }
   flex-direction: column;  /* logo nad nazwą */
   justify-content: center;
   align-items: center;
-  gap: 14px;
+  gap: 10px;
   text-align: center;
+  text-decoration: none;
   background: var(--white);
+  border: 2px solid #d7d7d7;
   border-radius: 12px;
-  padding: 28px 16px;
-  border-bottom: 4px solid var(--orange);
-  flex: 0 1 240px;         /* szersze kafelki dla większych logotypow */
+  padding: 8px;
+  flex: 0 1 240px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+.info-card:hover {
+  border-color: var(--orange);
+  background: #fff8f2;
+  box-shadow: 0 0 0 3px rgba(237, 120, 41, 0.14);
+}
+.info-card:focus-visible {
+  outline: 2px solid var(--orange);
+  outline-offset: 4px;
 }
 .delivery-info .info-card img {
-  width: auto;
-  height: clamp(88px, 11vw, 130px);
-  max-width: 100%;
+  width: min(100%, 220px);
+  height: auto;
+  max-height: 120px;
   object-fit: contain;
   margin-bottom: 0;
+  display: block;
 }
 .info-icon { font-size: 2rem; margin-bottom: 8px; }
 .delivery-info .info-card h4 {
@@ -1562,7 +1591,9 @@ ul { list-style: none; }
   color: var(--black);
   margin-bottom: 0;
   margin-top: 8px;
+  transition: color 0.2s ease;
 }
+.info-card:hover h4 { color: var(--orange); }
 .info-card p { font-size: 0.8rem; color: #595959; }
 
 /* ---- CATERING ---- */
@@ -2023,9 +2054,9 @@ textarea { resize: vertical; }
   }
 
   .info-card {
-    width: 80%;             /* zmniejszamy szerokość kafelka na mobile */
-    max-width: none;
-    margin-bottom: 16px;    /* odstęp między kafelkami */
+    width: min(100%, 320px);
+    max-width: 100%;
+    margin-bottom: 14px;
   }
 }
 /* ---- FOOTER HOURS & CONTACT ---- */
@@ -2326,9 +2357,9 @@ textarea { resize: vertical; }
   }
 
   .info-card {
-    width: 80%;             /* zmniejszamy szerokość kafelka na mobile */
-    max-width: none;
-    margin-bottom: 16px;    /* odstęp między kafelkami */
+    width: min(100%, 320px);
+    max-width: 100%;
+    margin-bottom: 14px;
   }
 }
 /* ---- FOOTER HOURS & CONTACT ---- */
