@@ -1,0 +1,6 @@
+# robots.txt – Restauracja Tex-Mex w sercu krakowskiego Kazimierza
+
+User-agent: *
+Allow: /
+
+Sitemap: https://losgorditos.pl/sitemap.xml
