@@ -1,23 +1,13 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-
-  <!-- Google tag (gtag.js) --> 
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QM1RK1M1W9"> </script> 
-  <script> 
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){
-      dataLayer.push(arguments);
-    } 
-    gtag('js', new Date()); 
-    gtag('config', 'G-QM1RK1M1W9'); 
-  </script>
-
+  <script src="../js/gtag-consent-default.js"></script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Los Gorditos - Menu</title>
   <meta http-equiv="refresh" content="0; url=menu-lg.pdf" />
   <link rel="canonical" href="https://losgorditos.pl/menu/" />
+  <link rel="stylesheet" href="../css/cookie-consent.css" />
   <script>
     window.location.replace('menu-lg.pdf');
   </script>
@@ -27,5 +17,47 @@
     Jeśli przekierowanie nie nastąpi automatycznie,
     <a href="menu-lg.pdf">kliknij tutaj, aby otworzyć menu</a>.
   </p>
+
+  <div id="cookie-banner" class="cookie-banner" hidden role="dialog" aria-labelledby="cookie-banner-title">
+    <div class="cookie-banner__inner">
+      <div class="cookie-banner__content">
+        <p id="cookie-banner-title" class="cookie-banner__title">Ta strona korzysta z plików cookies</p>
+        <p class="cookie-banner__text">
+          Używamy anonimowych plików cookies wyłącznie po to, aby lepiej zrozumieć, jak użytkownicy korzystają z naszej strony. Doceniamy Twoje wsparcie.
+          <a href="../polityka-cookies.html">Polityka cookies</a>
+        </p>
+      </div>
+      <div class="cookie-banner__actions">
+        <button type="button" class="cookie-banner__btn cookie-banner__btn--secondary" id="cookie-open-settings">Ustawienia cookies</button>
+        <button type="button" class="cookie-banner__btn cookie-banner__btn--primary" id="cookie-accept-all">Akceptuję</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="cookie-settings-modal" class="cookie-modal" hidden role="dialog" aria-labelledby="cookie-modal-title" aria-modal="true">
+    <div class="cookie-modal__backdrop" data-cookie-modal-close tabindex="-1"></div>
+    <div class="cookie-modal__panel">
+      <button type="button" class="cookie-modal__close" data-cookie-modal-close aria-label="Zamknij">&times;</button>
+      <h2 id="cookie-modal-title" class="cookie-modal__title">Ustawienia cookies</h2>
+      <p class="cookie-modal__text">
+        Wybierz, które pliki cookies chcesz włączyć. Szczegóły w
+        <a href="../polityka-cookies.html">polityce cookies</a>.
+      </p>
+      <label class="cookie-banner__toggle-row" for="cookie-analytics-toggle">
+        <span class="cookie-banner__toggle-text">
+          <span class="cookie-banner__toggle-label">Pliki cookies analityczne</span>
+          <span class="cookie-banner__toggle-hint">Google Analytics</span>
+        </span>
+        <span class="cookie-banner__switch">
+          <input type="checkbox" id="cookie-analytics-toggle" checked />
+          <span class="cookie-banner__slider" aria-hidden="true"></span>
+        </span>
+      </label>
+      <div class="cookie-modal__actions">
+        <button type="button" class="cookie-banner__btn cookie-banner__btn--primary" id="cookie-accept-selected">Akceptuję wybrane</button>
+      </div>
+    </div>
+  </div>
+  <script src="../js/cookie-consent.js" defer></script>
 </body>
 </html>

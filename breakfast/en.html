@@ -3,16 +3,7 @@
 
 <head>
 
-<!-- Google tag (gtag.js) --> 
- <script async src="https://www.googletagmanager.com/gtag/js?id=G-QM1RK1M1W9"> </script> 
- <script> 
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){
-    dataLayer.push(arguments);
-  } 
-  gtag('js', new Date()); 
-  gtag('config', 'G-QM1RK1M1W9'); 
-</script>
+<script src="../js/gtag-consent-default.js"></script>
 
 <script type="application/ld+json">
 {
@@ -89,6 +80,7 @@
   <link rel="preload" href="style-breakfast.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <noscript><link rel="stylesheet" href="style-breakfast.css" /></noscript>
   <link rel="stylesheet" href="style-breakfast.css" />
+  <link rel="stylesheet" href="../css/cookie-consent.css" />
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="../images/logo-losgorditos.svg" />
@@ -298,6 +290,11 @@
 
     <!-- COPYRIGHT -->
     <div class="footer-copy" style="text-align:center; margin-top:30px;">
+      <p class="footer-legal">
+        <a href="../cookie-policy.html">Cookie policy</a>
+        <span aria-hidden="true"> · </span>
+        <a href="#" data-cookie-settings>Cookie settings</a>
+      </p>
             <p>
         © 2026 Los Gorditos. All rights reserved. <br>
         <a href="https://github.com/michaldudek15" aria-label="GitHub profile of Michał Dudek" target="_blank" rel="noopener noreferrer" style="margin-left:6px; display:inline-flex; vertical-align:middle;">
@@ -309,6 +306,48 @@
       </p>
         </div>
   </footer>
+
+  <div id="cookie-banner" class="cookie-banner" hidden role="dialog" aria-labelledby="cookie-banner-title">
+    <div class="cookie-banner__inner">
+      <div class="cookie-banner__content">
+        <p id="cookie-banner-title" class="cookie-banner__title">This site uses cookies</p>
+        <p class="cookie-banner__text">
+          We use anonymous cookies only to better understand how users navigate our website.  We appreciate your support.
+          <a href="../cookie-policy.html">Cookie policy</a>
+        </p>
+      </div>
+      <div class="cookie-banner__actions">
+        <button type="button" class="cookie-banner__btn cookie-banner__btn--secondary" id="cookie-open-settings">Cookie settings</button>
+        <button type="button" class="cookie-banner__btn cookie-banner__btn--primary" id="cookie-accept-all">Accept</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="cookie-settings-modal" class="cookie-modal" hidden role="dialog" aria-labelledby="cookie-modal-title" aria-modal="true">
+    <div class="cookie-modal__backdrop" data-cookie-modal-close tabindex="-1"></div>
+    <div class="cookie-modal__panel">
+      <button type="button" class="cookie-modal__close" data-cookie-modal-close aria-label="Close">&times;</button>
+      <h2 id="cookie-modal-title" class="cookie-modal__title">Cookie settings</h2>
+      <p class="cookie-modal__text">
+        Choose which cookies to enable. See our
+        <a href="../cookie-policy.html">cookie policy</a> for details.
+      </p>
+      <label class="cookie-banner__toggle-row" for="cookie-analytics-toggle">
+        <span class="cookie-banner__toggle-text">
+          <span class="cookie-banner__toggle-label">Analytics cookies</span>
+          <span class="cookie-banner__toggle-hint">Google Analytics</span>
+        </span>
+        <span class="cookie-banner__switch">
+          <input type="checkbox" id="cookie-analytics-toggle" checked />
+          <span class="cookie-banner__slider" aria-hidden="true"></span>
+        </span>
+      </label>
+      <div class="cookie-modal__actions">
+        <button type="button" class="cookie-banner__btn cookie-banner__btn--primary" id="cookie-accept-selected">Accept selected</button>
+      </div>
+    </div>
+  </div>
+  <script src="../js/cookie-consent.js" defer></script>
 
 <script>
   (() => {
