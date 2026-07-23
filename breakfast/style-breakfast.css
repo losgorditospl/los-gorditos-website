@@ -568,11 +568,25 @@ ul { list-style: none; }
   padding: 100px 0;
   color: var(--white);
 }
+.menu-group-heading {
+  margin: 0 0 16px;
+  text-align: center;
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  letter-spacing: 0.08em;
+  color: var(--orange);
+}
+.menu-group-heading-drinks {
+  margin-top: 56px;
+}
 .menu-tabs {
   display: flex;
   gap: 8px;
   justify-content: center;
   margin-bottom: 48px;
+}
+.menu-tabs-drinks {
+  margin-top: 20px;
 }
 .tab {
   background: transparent;
@@ -1193,10 +1207,10 @@ textarea { resize: vertical; }
 /* HERO SECTION - with decorative emojis */
 .hero {
   background: var(--black);
-  padding: 80px 40px 60px;
+  padding: 56px 40px 36px;
   position: relative;
   overflow: hidden;
-  min-height: calc((100vh - var(--nav-h) - var(--topbar-h)) / 2);
+  min-height: calc((100vh - var(--nav-h) - var(--topbar-h)) / 3);
   display: flex;
   align-items: center;
 }
@@ -1365,6 +1379,7 @@ textarea { resize: vertical; }
   margin-bottom: 16px;
   letter-spacing: 0.02em;
   color: #111111;
+  text-align: center;
 }
 
 .section-sub {
@@ -1372,6 +1387,9 @@ textarea { resize: vertical; }
   font-size: 15px;
   line-height: 1.7;
   max-width: 520px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 48px;
 }
 
@@ -1397,19 +1415,23 @@ textarea { resize: vertical; }
 }
 
 .dish-emoji {
-  font-size: 48px;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 8px;
+  background: #f2f2f2;
   margin-bottom: 16px;
   display: block;
-  line-height: 1;
 }
 
 .dish-name {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 22px;
+  font-size: 24px;
   letter-spacing: 0.05em;
   margin-bottom: 8px;
   color: #111111;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .dish-desc {
@@ -1442,7 +1464,7 @@ textarea { resize: vertical; }
   .section { padding: 48px 24px; }
   .dishes-grid { grid-template-columns: 1fr; }
   .hero-inner { grid-template-columns: 1fr; gap: 40px; }
-  .hero { padding: 48px 24px 40px; }
+  .hero { padding: 36px 24px 28px; }
 }
 
 /* Keep nav CTA typography identical on all viewport widths. */
