@@ -20,7 +20,7 @@
 # Early versions of the new site
 /index-en.html                /en.html                 301
 /breakfast.html               /breakfast/              301
-/breakfast-en.html            /breakfast/              301
+/breakfast-en.html            /breakfast/en            301
 
 # Old English section
 /en/                          /en.html                 301
