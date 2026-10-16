@@ -1,0 +1,27 @@
+# Netlify redirects for losgorditos.pl
+# Old Wix-era addresses -> new pages (301 = permanent).
+
+# Old Wix pages
+/home                         /                        301
+/nasza-oferta                 /menu                    301
+/nasza-restauracja            /                        301
+/kontakt                      /                        301
+/catering                     /                        301
+/us%C5%82uga-dostawy          /                        301
+/usługa-dostawy               /                        301
+/polityka-prywatno%C5%9Bci    /polityka-cookies.html   301
+/polityka-prywatności         /polityka-cookies.html   301
+/consent-page                 /polityka-cookies.html   301
+
+# Old Wix menu PDF and older menu location
+/_files/ugd/dc1e0b_5d3b3d3381e9467894d45f3465cf1a05.pdf   /menu/menu-lg.pdf   301
+/images/menu-lg.pdf           /menu/menu-lg.pdf        301
+
+# Early versions of the new site
+/index-en.html                /en.html                 301
+/breakfast.html               /breakfast/              301
+/breakfast-en.html            /breakfast/              301
+
+# Old English section
+/en/                          /en.html                 301
+/en/*                         /en.html                 301
