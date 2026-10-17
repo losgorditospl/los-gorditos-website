@@ -22,8 +22,8 @@
 /breakfast.html               /breakfast/              301
 /breakfast-en.html            /breakfast/en.html       301
 
-# Old English section
-/en/                          /en.html                 301
-/en/*                         /en.html                 301
+# Old English section (forced lines must come first)
 /en                           /en.html                 301!
 /breakfast/en                 /breakfast/en.html       301!
+/en/                          /en.html                 301
+/en/*                         /en.html                 301
