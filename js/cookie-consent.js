@@ -1,7 +1,5 @@
 (function () {
   var STORAGE_KEY = 'losgorditos_cookie_consent';
-  var GA_ID = 'G-QM1RK1M1W9';
-  var gaLoaded = false;
 
   function ensureGtag() {
     window.dataLayer = window.dataLayer || [];
@@ -111,47 +109,14 @@
     });
   }
 
-  function configureGoogleAnalytics() {
+  function denyAnalyticsConsent() {
     ensureGtag();
-    grantAnalyticsConsent();
-    gtag('js', new Date());
-    gtag('config', GA_ID, {
-      anonymize_ip: true,
-      allow_google_signals: false,
-      allow_ad_personalization_signals: false
+    gtag('consent', 'update', {
+      analytics_storage: 'denied',
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied'
     });
-    gaLoaded = true;
-  }
-
-  function loadGoogleAnalytics() {
-    ensureGtag();
-    grantAnalyticsConsent();
-
-    var existing = document.querySelector('script[data-losgorditos-ga]');
-    if (existing) {
-      if (existing.getAttribute('data-loaded') === 'true') {
-        configureGoogleAnalytics();
-        return;
-      }
-      existing.addEventListener('load', function () {
-        existing.setAttribute('data-loaded', 'true');
-        configureGoogleAnalytics();
-      });
-      return;
-    }
-
-    var script = document.createElement('script');
-    script.async = true;
-    script.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
-    script.setAttribute('data-losgorditos-ga', 'true');
-    script.onload = function () {
-      script.setAttribute('data-loaded', 'true');
-      configureGoogleAnalytics();
-    };
-    script.onerror = function () {
-      gaLoaded = false;
-    };
-    document.head.appendChild(script);
   }
 
   function applyConsent(granted) {
@@ -159,11 +124,12 @@
     if (granted) {
       setConsent('granted');
       hideBanner();
-      loadGoogleAnalytics();
+      grantAnalyticsConsent();
       return;
     }
     setConsent('denied');
     hideBanner();
+    denyAnalyticsConsent();
     clearGoogleAnalyticsCookies();
   }
 
@@ -215,7 +181,6 @@
     if (consent === 'granted') {
       hideBanner();
       closeModal();
-      loadGoogleAnalytics();
       return;
     }
     if (consent === 'denied') {
@@ -224,8 +189,8 @@
       clearGoogleAnalyticsCookies();
       return;
     }
-    closeModal();
     showBanner();
+    openModal();
   }
 
   if (document.readyState === 'loading') {
