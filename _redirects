@@ -12,6 +12,9 @@
 /polityka-prywatno%C5%9Bci    /polityka-cookies.html   301
 /polityka-prywatności         /polityka-cookies.html   301
 /consent-page                 /polityka-cookies.html   301
+/homepage                     /                        301
+/usluga-dostawy               /                        301
+/wydarzenia                   /                        301
 
 # Old Wix menu PDF and older menu location
 /_files/ugd/dc1e0b_5d3b3d3381e9467894d45f3465cf1a05.pdf   /menu/menu-lg.pdf   301
