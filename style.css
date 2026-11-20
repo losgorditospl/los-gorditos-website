@@ -569,11 +569,26 @@ ul { list-style: none; }
   padding: 100px 0;
   color: var(--white);
 }
+.menu-group-heading {
+  margin: 0 0 16px;
+  text-align: center;
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  letter-spacing: 0.08em;
+  color: var(--orange);
+}
+.menu-group-heading-drinks {
+  margin-top: 56px;
+}
 .menu-tabs {
   display: flex;
   gap: 8px;
   justify-content: center;
   margin-bottom: 48px;
+  flex-wrap: wrap;
+}
+.menu-tabs-drinks {
+  margin-top: 20px;
 }
 .tab {
   background: transparent;
@@ -1450,11 +1465,26 @@ ul { list-style: none; }
   padding: 100px 0;
   color: var(--white);
 }
+.menu-group-heading {
+  margin: 0 0 16px;
+  text-align: center;
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  letter-spacing: 0.08em;
+  color: var(--orange);
+}
+.menu-group-heading-drinks {
+  margin-top: 56px;
+}
 .menu-tabs {
   display: flex;
   gap: 8px;
   justify-content: center;
   margin-bottom: 48px;
+  flex-wrap: wrap;
+}
+.menu-tabs-drinks {
+  margin-top: 20px;
 }
 .tab {
   background: transparent;
