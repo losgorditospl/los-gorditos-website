@@ -59,11 +59,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: calc(var(--nav-h) + 7px);
-}
-
-section[id] {
-  scroll-margin-top: calc(var(--nav-h) + 7px);
+  scroll-padding-top: var(--nav-h);
 }
 
 body {
@@ -955,11 +951,7 @@ textarea { resize: vertical; }
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: calc(var(--nav-h) + 7px);
-}
-
-section[id] {
-  scroll-margin-top: calc(var(--nav-h) + 7px);
+  scroll-padding-top: var(--nav-h);
 }
 
 body {
