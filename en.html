@@ -131,7 +131,7 @@
         <!-- <a class="nav-breakfast">BREAKFAST</a>         -->
         <span class="nav-breakfast-badge">NEW!</span>
       </div>
-      <a href="#menu" class="mobile-quick-menu" target="_blank" rel="noopener noreferrer">MENU</a>
+      <a href="#menu" class="mobile-quick-menu">MENU</a>
       <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navLinks">
         <span></span><span></span><span></span>
       </button>
@@ -142,7 +142,7 @@
         <li><a href="#delivery">Delivery service</a></li>
         <li><a href="#catering">Catering</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="#menu" class="btn-menu" target="_blank">MENU</a></li>
+        <li><a href="#menu" class="btn-menu">MENU</a></li>
       </ul>
     </div>
   </nav>
@@ -338,9 +338,9 @@
       </div>
       <h3 class="menu-group-heading menu-group-heading-drinks">DRINKS</h3>
       <div class="menu-tabs menu-tabs-drinks" role="tablist" aria-label="Drink categories">
+        <button class="tab active" data-tab="alcoholic" role="tab" aria-selected="true" aria-controls="tab-alcoholic" id="tab-btn-alcoholic">ALCOHOLIC</button>
+        <button class="tab" data-tab="tequila-mezcal" role="tab" aria-selected="false" aria-controls="tab-tequila-mezcal" id="tab-btn-tequila-mezcal">TEQUILA &amp; MEZCAL</button>
         <button class="tab" data-tab="non-alcoholic" role="tab" aria-selected="false" aria-controls="tab-non-alcoholic" id="tab-btn-non-alcoholic">NON-ALCOHOLIC</button>
-        <button class="tab" data-tab="alcoholic" role="tab" aria-selected="false" aria-controls="tab-alcoholic" id="tab-btn-alcoholic">ALCOHOLIC</button>
-        <button class="tab active" data-tab="tequila-mezcal" role="tab" aria-selected="true" aria-controls="tab-tequila-mezcal" id="tab-btn-tequila-mezcal">TEQUILA &amp; MEZCAL</button>
       </div>
       <div class="menu-content" id="tab-non-alcoholic" role="tabpanel" aria-labelledby="tab-btn-non-alcoholic">
         <div class="menu-grid">
@@ -394,7 +394,7 @@
           </div>
         </div>
       </div>
-      <div class="menu-content" id="tab-alcoholic" role="tabpanel" aria-labelledby="tab-btn-alcoholic">
+      <div class="menu-content active" id="tab-alcoholic" role="tabpanel" aria-labelledby="tab-btn-alcoholic">
         <div class="menu-grid">
           <div class="menu-item">
             <div class="menu-item-info"><h4>Margarita</h4><p>Our specialty. Tequila, lime juice, and agave syrup. Available in four versions: classic with orange liqueur, mango and passion fruit, and strawberry. Ask the staff about the seasonal version.</p></div>
@@ -450,7 +450,7 @@
           </div>
         </div>
       </div>
-      <div class="menu-content active" id="tab-tequila-mezcal" role="tabpanel" aria-labelledby="tab-btn-tequila-mezcal">
+      <div class="menu-content" id="tab-tequila-mezcal" role="tabpanel" aria-labelledby="tab-btn-tequila-mezcal">
         <div class="menu-grid">
           <div class="menu-item">
             <div class="menu-item-info"><h4>Patron Silver</h4><p></p></div>
