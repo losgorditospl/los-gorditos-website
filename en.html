@@ -338,12 +338,40 @@
       </div>
       <h3 class="menu-group-heading menu-group-heading-drinks">DRINKS</h3>
       <div class="menu-tabs menu-tabs-drinks" role="tablist" aria-label="Drink categories">
-        <button class="tab" data-tab="cold-drinks" role="tab" aria-selected="false" aria-controls="tab-cold-drinks" id="tab-btn-cold-drinks">COLD DRINKS</button>
-        <button class="tab" data-tab="alcohol" role="tab" aria-selected="false" aria-controls="tab-alcohol" id="tab-btn-alcohol">ALCOHOL</button>
-        <button class="tab active" data-tab="coffee" role="tab" aria-selected="true" aria-controls="tab-coffee" id="tab-btn-coffee">COFFEE &amp; TEA</button>
+        <button class="tab" data-tab="non-alcoholic" role="tab" aria-selected="false" aria-controls="tab-non-alcoholic" id="tab-btn-non-alcoholic">NON-ALCOHOLIC</button>
+        <button class="tab" data-tab="alcoholic" role="tab" aria-selected="false" aria-controls="tab-alcoholic" id="tab-btn-alcoholic">ALCOHOLIC</button>
+        <button class="tab active" data-tab="tequila-mezcal" role="tab" aria-selected="true" aria-controls="tab-tequila-mezcal" id="tab-btn-tequila-mezcal">TEQUILA &amp; MEZCAL</button>
       </div>
-      <div class="menu-content active" id="tab-coffee" role="tabpanel" aria-labelledby="tab-btn-coffee">
+      <div class="menu-content" id="tab-non-alcoholic" role="tabpanel" aria-labelledby="tab-btn-non-alcoholic">
         <div class="menu-grid">
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Homemade lemonade (350 ml / 0.5 l / 1.0 l)</h4><p>Available in four versions: classic lemon-orange, mango and passion fruit, and strawberry. Ask the staff about the seasonal version.</p></div>
+            <span class="menu-price">20 zł / 27 zł / 45 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Jarritos</h4><p>Mexican fruit sodas. Available in Mexican cola, pineapple, grapefruit, lime, tamarind, strawberry, mandarin, guava, and mango.</p></div>
+            <span class="menu-price">20 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Soft drinks</h4><p>Coca-Cola, Coca-Cola Zero, Fanta, Sprite, Kinley Tonic, Cappy, Fuzetea. (250 ml)</p></div>
+            <span class="menu-price">12 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Corona 0%</h4><p>Iconic Mexican lager with a light, refreshing taste and a distinctive citrus finish. Served with lime, as it should be.</p></div>
+            <span class="menu-price">18 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Estrella Galicia 0%</h4><p>Spanish non-alcoholic beer with a light, refreshing taste and gentle bitterness. A good choice for anyone who wants classic beer flavor without the alcohol.</p></div>
+            <span class="menu-price">18 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Craft beers 0%</h4><p>Nepo, PINTA, and Trzech Kumpli. Check the fridge or ask the staff which flavors are available today.</p></div>
+            <span class="menu-price">25 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Water (0.5 l / 1.0 l)</h4><p>Sparkling or still.</p></div>
+            <span class="menu-price">6 zł / 12 zł</span>
+          </div>
           <div class="menu-item">
             <div class="menu-item-info"><h4>Espresso / Double espresso</h4><p>We use beans from <a href="https://www.instagram.com/garage_coffee_equipment/" target="_blank" rel="noopener noreferrer">Garage Coffee Roasters</a>.</p></div>
             <span class="menu-price">8 zł / 14 zł</span>
@@ -361,84 +389,131 @@
             <span class="menu-price">17 zł</span>
           </div>
           <div class="menu-item">
-            <div class="menu-item-info"><h4>Latte</h4><p></p></div>
-            <span class="menu-price">17 zł</span>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-info"><h4>Espresso orange</h4><p>Iced espresso with freshly squeezed orange juice.</p></div>
-            <span class="menu-price">26 zł</span>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-info"><h4>Espresso horchata</h4><p>Iced espresso with sweet cinnamon-rice Mexican horchata.</p></div>
-            <span class="menu-price">20 zł</span>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-info"><h4>Tea (cup / pot)</h4><p>English breakfast, Earl Grey, jasmine green tea, or raspberry with rose.</p></div>
-            <span class="menu-price">14 zł / 20 zł</span>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-info"><h4>Plant-based milk</h4><p>Oat or vanilla-flavored pea milk.</p></div>
-            <span class="menu-price">+2 zł</span>
+            <div class="menu-item-info"><h4>Tea</h4><p></p></div>
+            <span class="menu-price">14 zł</span>
           </div>
         </div>
       </div>
-      <div class="menu-content" id="tab-cold-drinks" role="tabpanel" aria-labelledby="tab-btn-cold-drinks">
+      <div class="menu-content" id="tab-alcoholic" role="tabpanel" aria-labelledby="tab-btn-alcoholic">
         <div class="menu-grid">
           <div class="menu-item">
-            <div class="menu-item-info"><h4>Homemade lemonade (350 ml / 0.5 l / 1.0 l)</h4><p></p></div>
-            <span class="menu-price">20 zł / 27 zł / 45 zł</span>
+            <div class="menu-item-info"><h4>Margarita</h4><p>Our specialty. Tequila, lime juice, and agave syrup. Available in four versions: classic with orange liqueur, mango and passion fruit, and strawberry. Ask the staff about the seasonal version.</p></div>
+            <span class="menu-price">38 zł</span>
           </div>
           <div class="menu-item">
-            <div class="menu-item-info"><h4>Jarritos</h4><p>Mexican fruit-flavored sodas. Available in Mexican cola, mango, guava, and lime.</p></div>
-            <span class="menu-price">20 zł</span>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-info"><h4>Soft drinks</h4><p>Coca-Cola, Coca-Cola Zero, Fanta, or Sprite (250 ml).</p></div>
-            <span class="menu-price">12 zł</span>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-info"><h4>Water (0.5 l / 1.0 l)</h4><p>Sparkling or still.</p></div>
-            <span class="menu-price">6 zł / 12 zł</span>
-          </div>
-        </div>
-      </div>
-      <div class="menu-content" id="tab-alcohol" role="tabpanel" aria-labelledby="tab-btn-alcohol">
-        <div class="menu-grid">
-          <div class="menu-item">
-            <div class="menu-item-info"><h4>Staropramen (300 ml / 0.5 l)</h4><p>Classic Czech lager with full flavor and gentle bitterness.</p></div>
+            <div class="menu-item-info"><h4>Namysłów (300 ml / 0.5 l)</h4><p>A classic Polish lager with a golden color, gentle maltiness, and pleasant hop bitterness. Light, crisp, and a great match for Mexican food.</p></div>
             <span class="menu-price">15 zł / 18 zł</span>
           </div>
           <div class="menu-item">
-            <div class="menu-item-info"><h4>Blue Moon (300 ml / 0.5 l)</h4><p>American Belgian-style wheat beer with oats, orange peel, and coriander.</p></div>
-            <span class="menu-price">20 zł / 24 zł</span>
+            <div class="menu-item-info"><h4>Żywiec Biały (300 ml / 0.5 l)</h4><p>A wheat beer with a delicate, mild flavor and subtle citrus notes. Naturally cloudy, light, and refreshing.</p></div>
+            <span class="menu-price">17 zł / 20 zł</span>
           </div>
           <div class="menu-item">
-            <div class="menu-item-info"><h4>Corona / Corona 0%</h4><p>Iconic Mexican lager with a light refreshing profile and citrus finish. Served with lime, as it should be.</p></div>
+            <div class="menu-item-info"><h4>Corona</h4><p>Iconic Mexican lager with a light, refreshing taste and a distinctive citrus finish. Served with lime, as it should be.</p></div>
             <span class="menu-price">18 zł</span>
           </div>
           <div class="menu-item">
-            <div class="menu-item-info"><h4>Mimosa</h4><p>Light and refreshing cocktail with fresh orange juice and sparkling wine.</p></div>
-            <span class="menu-price">28 zł</span>
+            <div class="menu-item-info"><h4>Estrella Galicia</h4><p>A Spanish lager with a golden color, pleasant maltiness, and gentle hop bitterness. A refreshing classic from Galicia.</p></div>
+            <span class="menu-price">18 zł</span>
           </div>
           <div class="menu-item">
-            <div class="menu-item-info"><h4>Bellini</h4><p>Elegant cocktail with peach puree and sparkling wine, subtly sweet and fruity.</p></div>
-            <span class="menu-price">28 zł</span>
+            <div class="menu-item-info"><h4>Craft beers</h4><p>Nepo, PINTA, and Trzech Kumpli. Check the fridge or ask the staff which flavors are available today.</p></div>
+            <span class="menu-price">25 zł</span>
           </div>
           <div class="menu-item">
-            <div class="menu-item-info"><h4>Tropical Sangria (200 ml / 0.5 l / 1.0 l)</h4><p>Fruity twist on the classic sangria.</p></div>
-            <span class="menu-price">25 zł / 50 zł / 75 zł</span>
+            <div class="menu-item-info"><h4>Tequila Sunrise</h4><p>A colorful cocktail of tequila, orange juice, and grenadine. Sweet, fruity, and refreshing, with the classic sunrise effect.</p></div>
+            <span class="menu-price">35 zł</span>
           </div>
           <div class="menu-item">
-            <div class="menu-item-info"><h4>Aperol Spritz</h4><p>Classic Italian cocktail with Aperol and sparkling wine, orange notes, and pleasant bitterness.</p></div>
+            <div class="menu-item-info"><h4>Paloma</h4><p>A Mexican classic made with tequila, grapefruit, and lime. Light, citrusy, and refreshing, with a balance of sweetness and acidity.</p></div>
+            <span class="menu-price">36 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Mojito</h4><p>A Cuban classic with white rum, fresh mint, lime, and soda water. Light, refreshing, and perfect for warm days.</p></div>
+            <span class="menu-price">35 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Mexican Mojito</h4><p>Our own take on the classic mojito, with pineapple and tepache, a Mexican drink made from fermented pineapple rind and cane sugar.</p></div>
+            <span class="menu-price">38 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Aperol Spritz</h4><p>A classic Italian cocktail of Aperol and sparkling wine, with a refreshing orange note and a light, pleasant bitterness.</p></div>
             <span class="menu-price">32 zł</span>
           </div>
           <div class="menu-item">
-            <div class="menu-item-info"><h4>Lavender Limoncello</h4><p>Fresh aromatic cocktail combining sparkling wine, citrus-lavender cordial, mint, and a subtle floral note.</p></div>
-            <span class="menu-price">32 zł</span>
+            <div class="menu-item-info"><h4>Sangria (150 ml / 0.5 l / 1.0 l)</h4><p>A Spanish classic of wine and juicy fruit. Light, fruity, and refreshing, made for sharing.</p></div>
+            <span class="menu-price">20 zł / 50 zł / 75 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>House wine (150 ml / 0.5 l / 1.0 l)</h4><p>Dry white or dry red.</p></div>
+            <span class="menu-price">18 zł / 45 zł / 70 zł</span>
           </div>
         </div>
       </div>
-    </div>
+      <div class="menu-content active" id="tab-tequila-mezcal" role="tabpanel" aria-labelledby="tab-btn-tequila-mezcal">
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Patron Silver</h4><p></p></div>
+            <span class="menu-price">32 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Patron Reposado</h4><p></p></div>
+            <span class="menu-price">33 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Patron Anejo</h4><p></p></div>
+            <span class="menu-price">34 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Espolon Silver</h4><p></p></div>
+            <span class="menu-price">29 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Espolon Reposado</h4><p></p></div>
+            <span class="menu-price">30 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Rooster Rojo Blanco</h4><p></p></div>
+            <span class="menu-price">25 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Rooster Rojo Reposado</h4><p></p></div>
+            <span class="menu-price">27 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Rooster Rojo Anejo</h4><p></p></div>
+            <span class="menu-price">30 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Rooster Rojo Ahumado</h4><p></p></div>
+            <span class="menu-price">29 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Rooster Rojo Smoked Pineapple</h4><p></p></div>
+            <span class="menu-price">27 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Se Busca Atresanal Reposado</h4><p></p></div>
+            <span class="menu-price">34 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Se Busca Atresanal Anejo</h4><p></p></div>
+            <span class="menu-price">35 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Se Busca Atresanal Joven</h4><p></p></div>
+            <span class="menu-price">33 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Montelobos Espadin Joven</h4><p></p></div>
+            <span class="menu-price">33 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Rooster Rojo Mezcal</h4><p></p></div>
+            <span class="menu-price">29 zł</span>
+          </div>
+        </div>
+      </div>
   </section>
 
   <!-- DELIVERY -->
