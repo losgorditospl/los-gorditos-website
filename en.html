@@ -10,7 +10,6 @@
   "@context": "https://schema.org",
   "@type": "Restaurant",
   "name": "Los Gorditos",
-  "inLanguage": "en",
   "url": "https://losgorditos.pl/en",
   "logo": "https://losgorditos.pl/images/logo-losgorditos.svg",
   "image": "https://losgorditos.pl/images/logo-above-door.webp",
@@ -32,7 +31,8 @@
     "longitude": 19.94220
   },
   "hasMap": "https://maps.app.goo.gl/PgwjpABLZufiH4pV9",
-  "menu": "https://losgorditos.pl/menu/",
+  "hasMenu": "https://losgorditos.pl/en.html#menu",
+  "menu": "https://losgorditos.pl/en.html#menu",
   "currenciesAccepted": "PLN, BTC",
   "paymentAccepted": "Cash, Credit Card, Mobile Payment, Blik, Bitcoin",
   "openingHoursSpecification": [
@@ -79,7 +79,7 @@
 
   <title>Los Gorditos –  Tex-Mex & Mexican restaurant in the heart of Kraków</title>
 
-  <link rel="prefetch" href="menu/" as="document">
+  <link rel="prefetch" href="/menu/menu-lg.pdf" as="document">
   <link rel="preload" href="fonts/BebasNeue-Regular.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="preload" href="fonts/Barlow-Regular.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="preload" href="fonts/Barlow-Bold.ttf" as="font" type="font/ttf" crossorigin>
@@ -109,7 +109,7 @@
         <p><a href="mailto:losgorditos.pl@gmail.com">✉️ losgorditos.pl@gmail.com</a></p>
       </span>
       <div class="topbar-social">
-        <a href="https://losgorditos.pl/" class="topbar-lang-switch" aria-label="Polish version">PL <img src="images/flag-poland.webp" alt="" aria-hidden="true" class="flag-icon" /></a>
+        <a href="/index.html" class="topbar-lang-switch" aria-label="Polish version">PL <img src="images/flag-poland.webp" alt="" aria-hidden="true" class="flag-icon" /></a>
         <a href="https://www.facebook.com/losgorditosPL/" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
           <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.99 3.66 9.12 8.44 9.88v-6.99H7.9v-2.89h2.54V9.84c0-2.51 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.77l-.44 2.89h-2.33v6.99C18.34 21.12 22 16.99 22 12z"/></svg>
         </a>
@@ -131,7 +131,7 @@
         <!-- <a class="nav-breakfast">BREAKFAST</a>         -->
         <span class="nav-breakfast-badge">NEW!</span>
       </div>
-      <a href="menu/" class="mobile-quick-menu" target="_blank" rel="noopener noreferrer">MENU</a>
+      <a href="#menu" class="mobile-quick-menu">MENU</a>
       <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navLinks">
         <span></span><span></span><span></span>
       </button>
@@ -142,7 +142,7 @@
         <li><a href="#delivery">Delivery service</a></li>
         <li><a href="#catering">Catering</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="menu/" class="btn-menu" target="_blank">MENU</a></li>
+        <li><a href="#menu" class="btn-menu">MENU</a></li>
       </ul>
     </div>
   </nav>
@@ -228,8 +228,9 @@
       <div class="section-header light">
 
         <h2>Menu</h2>
-        <p class="menu-subtitle">Check out our full menu in the <a href="menu/" target="_blank" rel="noopener noreferrer">here</a></p>
+        <p class="menu-subtitle">Check out our full menu in the <a href="/menu/menu-lg.pdf" target="_blank" rel="noopener noreferrer">here</a></p>
       </div>
+      <h3 class="menu-group-heading">FOOD</h3>
       <div class="menu-tabs" role="tablist" aria-label="Menu categories">
         <button class="tab active" data-tab="main" role="tab" aria-selected="true" aria-controls="tab-main" id="tab-btn-main">Dishes</button>
         <button class="tab" data-tab="sides" role="tab" aria-selected="false" aria-controls="tab-sides" id="tab-btn-sides">Main Ingredients</button>
@@ -314,6 +315,10 @@
             <span class="menu-price">unlimited</span>
           </div>
           <div class="menu-item">
+            <div class="menu-item-info"><h4>Garlic Cream</h4><p>A creamy sauce made with sour cream and mayonnaise, blended with fresh garlic and a carefully balanced mix of seasonings. Rich in flavor yet pleasantly mild, it pairs perfectly with our dishes..</p></div>
+            <span class="menu-price">bez limitu</span>
+          </div>
+          <div class="menu-item">
             <div class="menu-item-info"><h4>Lime & Cilantro Cream</h4><p>A refreshing, tangy sauce with cilantro and lime, adding a burst of brightness to your meal.</p></div>
             <span class="menu-price">unlimited</span>
           </div>
@@ -331,7 +336,184 @@
           </div>
         </div>
       </div>
-    </div>
+      <h3 class="menu-group-heading menu-group-heading-drinks">DRINKS</h3>
+      <div class="menu-tabs menu-tabs-drinks" role="tablist" aria-label="Drink categories">
+        <button class="tab active" data-tab="alcoholic" role="tab" aria-selected="true" aria-controls="tab-alcoholic" id="tab-btn-alcoholic">ALCOHOLIC</button>
+        <button class="tab" data-tab="tequila-mezcal" role="tab" aria-selected="false" aria-controls="tab-tequila-mezcal" id="tab-btn-tequila-mezcal">TEQUILA &amp; MEZCAL</button>
+        <button class="tab" data-tab="non-alcoholic" role="tab" aria-selected="false" aria-controls="tab-non-alcoholic" id="tab-btn-non-alcoholic">NON-ALCOHOLIC</button>
+      </div>
+      <div class="menu-content" id="tab-non-alcoholic" role="tabpanel" aria-labelledby="tab-btn-non-alcoholic">
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Homemade lemonade (350 ml / 0.5 l / 1.0 l)</h4><p>Available in four versions: classic lemon-orange, mango and passion fruit, and strawberry. Ask the staff about the seasonal version.</p></div>
+            <span class="menu-price">20 zł / 27 zł / 45 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Jarritos</h4><p>Mexican fruit sodas. Available in Mexican cola, pineapple, grapefruit, lime, tamarind, strawberry, mandarin, guava, and mango.</p></div>
+            <span class="menu-price">20 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Soft drinks</h4><p>Coca-Cola, Coca-Cola Zero, Fanta, Sprite, Kinley Tonic, Cappy, Fuzetea. (250 ml)</p></div>
+            <span class="menu-price">12 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Corona 0%</h4><p>Iconic Mexican lager with a light, refreshing taste and a distinctive citrus finish. Served with lime, as it should be.</p></div>
+            <span class="menu-price">18 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Estrella Galicia 0%</h4><p>Spanish non-alcoholic beer with a light, refreshing taste and gentle bitterness. A good choice for anyone who wants classic beer flavor without the alcohol.</p></div>
+            <span class="menu-price">18 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Craft beers 0%</h4><p>Nepo, PINTA, and Trzech Kumpli. Check the fridge or ask the staff which flavors are available today.</p></div>
+            <span class="menu-price">25 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Water (0.5 l / 1.0 l)</h4><p>Sparkling or still.</p></div>
+            <span class="menu-price">6 zł / 12 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Espresso / Double espresso</h4><p>We use beans from <a href="https://www.instagram.com/garage_coffee_equipment/" target="_blank" rel="noopener noreferrer">Garage Coffee Roasters</a>.</p></div>
+            <span class="menu-price">8 zł / 14 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Americano</h4><p></p></div>
+            <span class="menu-price">14 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Cappuccino</h4><p></p></div>
+            <span class="menu-price">15 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Flat white</h4><p></p></div>
+            <span class="menu-price">17 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Tea</h4><p></p></div>
+            <span class="menu-price">14 zł</span>
+          </div>
+        </div>
+      </div>
+      <div class="menu-content active" id="tab-alcoholic" role="tabpanel" aria-labelledby="tab-btn-alcoholic">
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Margarita</h4><p>Our specialty. Tequila, lime juice, and agave syrup. Available in four versions: classic with orange liqueur, mango and passion fruit, and strawberry. Ask the staff about the seasonal version.</p></div>
+            <span class="menu-price">38 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Namysłów (300 ml / 0.5 l)</h4><p>A classic Polish lager with a golden color, gentle maltiness, and pleasant hop bitterness. Light, crisp, and a great match for Mexican food.</p></div>
+            <span class="menu-price">15 zł / 18 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Żywiec Biały (300 ml / 0.5 l)</h4><p>A wheat beer with a delicate, mild flavor and subtle citrus notes. Naturally cloudy, light, and refreshing.</p></div>
+            <span class="menu-price">17 zł / 20 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Corona</h4><p>Iconic Mexican lager with a light, refreshing taste and a distinctive citrus finish. Served with lime, as it should be.</p></div>
+            <span class="menu-price">18 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Estrella Galicia</h4><p>A Spanish lager with a golden color, pleasant maltiness, and gentle hop bitterness. A refreshing classic from Galicia.</p></div>
+            <span class="menu-price">18 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Craft beers</h4><p>Nepo, PINTA, and Trzech Kumpli. Check the fridge or ask the staff which flavors are available today.</p></div>
+            <span class="menu-price">25 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Tequila Sunrise</h4><p>A colorful cocktail of tequila, orange juice, and grenadine. Sweet, fruity, and refreshing, with the classic sunrise effect.</p></div>
+            <span class="menu-price">35 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Paloma</h4><p>A Mexican classic made with tequila, grapefruit, and lime. Light, citrusy, and refreshing, with a balance of sweetness and acidity.</p></div>
+            <span class="menu-price">36 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Mojito</h4><p>A Cuban classic with white rum, fresh mint, lime, and soda water. Light, refreshing, and perfect for warm days.</p></div>
+            <span class="menu-price">35 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Mexican Mojito</h4><p>Our own take on the classic mojito, with pineapple and tepache, a Mexican drink made from fermented pineapple rind and cane sugar.</p></div>
+            <span class="menu-price">38 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Aperol Spritz</h4><p>A classic Italian cocktail of Aperol and sparkling wine, with a refreshing orange note and a light, pleasant bitterness.</p></div>
+            <span class="menu-price">32 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Sangria (150 ml / 0.5 l / 1.0 l)</h4><p>A Spanish classic of wine and juicy fruit. Light, fruity, and refreshing, made for sharing.</p></div>
+            <span class="menu-price">20 zł / 50 zł / 75 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>House wine (150 ml / 0.5 l / 1.0 l)</h4><p>Dry white or dry red.</p></div>
+            <span class="menu-price">18 zł / 45 zł / 70 zł</span>
+          </div>
+        </div>
+      </div>
+      <div class="menu-content" id="tab-tequila-mezcal" role="tabpanel" aria-labelledby="tab-btn-tequila-mezcal">
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Patron Silver</h4><p></p></div>
+            <span class="menu-price">32 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Patron Reposado</h4><p></p></div>
+            <span class="menu-price">33 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Patron Anejo</h4><p></p></div>
+            <span class="menu-price">34 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Espolon Silver</h4><p></p></div>
+            <span class="menu-price">29 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Espolon Reposado</h4><p></p></div>
+            <span class="menu-price">30 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Rooster Rojo Blanco</h4><p></p></div>
+            <span class="menu-price">25 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Rooster Rojo Reposado</h4><p></p></div>
+            <span class="menu-price">27 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Rooster Rojo Anejo</h4><p></p></div>
+            <span class="menu-price">30 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Rooster Rojo Ahumado</h4><p></p></div>
+            <span class="menu-price">29 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Rooster Rojo Smoked Pineapple</h4><p></p></div>
+            <span class="menu-price">27 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Se Busca Atresanal Reposado</h4><p></p></div>
+            <span class="menu-price">34 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Se Busca Atresanal Anejo</h4><p></p></div>
+            <span class="menu-price">35 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Se Busca Atresanal Joven</h4><p></p></div>
+            <span class="menu-price">33 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Montelobos Espadin Joven</h4><p></p></div>
+            <span class="menu-price">33 zł</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info"><h4>Rooster Rojo Mezcal</h4><p></p></div>
+            <span class="menu-price">29 zł</span>
+          </div>
+        </div>
+      </div>
   </section>
 
   <!-- DELIVERY -->
@@ -502,6 +684,7 @@
       </p>
             <p>
         © 2026 Los Gorditos. All rights reserved. <br> 
+        Adam Longhorn „Los Gorditos” · NIP 6762569919 · ul. Augustiańska 24/LU2, 31-064 Kraków <br>
         <a href="https://github.com/michaldudek15" aria-label="GitHub profile of Michał Dudek" target="_blank" rel="noopener noreferrer" style="margin-left:6px; display:inline-flex; vertical-align:middle;">
           Website made by Michał Dudek.&nbsp;
           <svg width="14" height="14" viewBox="0 -0.5 25 25" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -597,19 +780,33 @@
       });
     }
 
-    // Each tab shows its associated panel: #tab-{data-tab}.
-    const tabs = document.querySelectorAll('.tab[data-tab]');
-    tabs.forEach(tab => {
-      tab.addEventListener('click', () => {
-        tabs.forEach(t => {
-          t.classList.remove('active');
-          t.setAttribute('aria-selected', 'false');
+    // Each tab group controls only its own panels.
+    const tabGroups = document.querySelectorAll('.menu-tabs[role="tablist"]');
+    tabGroups.forEach(group => {
+      const groupTabs = Array.from(group.querySelectorAll('.tab[role="tab"]'));
+      const panelIds = groupTabs
+        .map(tab => tab.getAttribute('aria-controls'))
+        .filter(Boolean);
+
+      groupTabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          groupTabs.forEach(t => {
+            t.classList.remove('active');
+            t.setAttribute('aria-selected', 'false');
+          });
+
+          panelIds.forEach(panelId => {
+            const panel = document.getElementById(panelId);
+            if (panel) panel.classList.remove('active');
+          });
+
+          tab.classList.add('active');
+          tab.setAttribute('aria-selected', 'true');
+
+          const targetPanelId = tab.getAttribute('aria-controls');
+          const targetPanel = targetPanelId ? document.getElementById(targetPanelId) : null;
+          if (targetPanel) targetPanel.classList.add('active');
         });
-        document.querySelectorAll('.menu-content').forEach(p => p.classList.remove('active'));
-        tab.classList.add('active');
-        tab.setAttribute('aria-selected', 'true');
-        const panel = document.getElementById('tab-' + tab.dataset.tab);
-        if (panel) panel.classList.add('active');
       });
     });
 

@@ -60,11 +60,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: calc(var(--nav-h) + 7px);
-}
-
-section[id] {
-  scroll-margin-top: calc(var(--nav-h) + 7px);
+  scroll-padding-top: var(--nav-h);
 }
 
 body {
@@ -1175,6 +1171,12 @@ textarea { resize: vertical; }
     max-width: none;
     margin-bottom: 16px;    /* odstęp między kafelkami */
   }
+
+  .menu-section,
+  .contact,
+  .section {
+    padding-top: 32px;
+  }
 }
 /* ---- FOOTER HOURS & CONTACT ---- */
 .footer-hours,
@@ -1461,7 +1463,12 @@ textarea { resize: vertical; }
 
 @media (max-width: 768px) {
   .countdown-box { min-width: unset; }
-  .section { padding: 48px 24px; }
+  .section {
+    padding-top: 32px;
+    padding-bottom: 48px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
   .dishes-grid { grid-template-columns: 1fr; }
   .hero-inner { grid-template-columns: 1fr; gap: 40px; }
   .hero { padding: 36px 24px 28px; }

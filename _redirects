@@ -19,6 +19,10 @@
 # Old Wix menu PDF and older menu location
 /_files/ugd/dc1e0b_5d3b3d3381e9467894d45f3465cf1a05.pdf   /menu/menu-lg.pdf   301
 /images/menu-lg.pdf           /menu/menu-lg.pdf        301
+/menu                   /#menu              301!
+/menu/                  /#menu              301!
+/breakfast/menu         /breakfast/#menu    301!
+/breakfast/menu/        /breakfast/#menu    301!
 
 # Early versions of the new site
 /index-en.html                /en.html                 301
