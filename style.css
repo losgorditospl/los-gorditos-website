@@ -2080,6 +2080,15 @@ textarea { resize: vertical; }
     max-width: 100%;
     margin-bottom: 14px;
   }
+
+  .menu-section,
+  .about,
+  .offer,
+  .delivery,
+  .catering,
+  .contact {
+    padding-top: 32px;
+  }
 }
 /* ---- FOOTER HOURS & CONTACT ---- */
 .footer-hours,
@@ -2382,6 +2391,15 @@ textarea { resize: vertical; }
     width: min(100%, 320px);
     max-width: 100%;
     margin-bottom: 14px;
+  }
+
+  .menu-section,
+  .about,
+  .offer,
+  .delivery,
+  .catering,
+  .contact {
+    padding-top: 32px;
   }
 }
 /* ---- FOOTER HOURS & CONTACT ---- */
